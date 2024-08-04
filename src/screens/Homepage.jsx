@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Text, View } from 'react-native'
 import ActivityLoading from '../components/ActivityLoading';
-const isLoading = true;
+const isLoading = false;
 const Homepage = () => {
     if (isLoading){
         return(
