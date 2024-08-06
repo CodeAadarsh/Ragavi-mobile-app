@@ -21,25 +21,25 @@ const SignUp = () => {
 
 
             {/* For the Heading, Input Fields, Submit Buttons */}
-            <View className="m-4 mt-16">
+            <View className="m-4 mt-4">
 
                 {/* Login Heading */}
-                <Text className=" text-5xl">
+                <Text className=" text-5xl my-10">
                     Sign Up
                 </Text>
 
                 {/* Email, Password Inputs */}
                 <TextInput
                     placeholder='Name'
-                    className="mt-10 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
                 />
                 <TextInput
                     placeholder='Email'
-                    className="mt-10 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
                 />
                 <TextInput
                     placeholder='Password'
-                    className="mt-10 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
                 />
 
 

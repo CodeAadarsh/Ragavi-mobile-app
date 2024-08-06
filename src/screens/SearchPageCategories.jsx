@@ -2,6 +2,7 @@ import { View, Text, Image, ScrollView } from 'react-native'
 import React from 'react'
 import ActivityLoading from '../components/ActivityLoading';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
+import LogoHeader from '../components/LogoHeader';
 
 const isLoading = false;
 
@@ -16,26 +17,14 @@ const SearchPageCategories = () => {
     )
   }
   return (
-    <View className='flex-1 m-5'>
+    <View className='flex-1'>
 
       {/* Header */}
-      <View className='mt-16 flex flex-row justify-between'>
-        <TouchableOpacity>
-          <Image
-            style={{ width: 120, height: 40, resizeMode: 'contain' }}
-            source={require('../../assets/Images/RagaviLogo.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image
-            style={{ width: 30, height: 30, resizeMode: 'contain' }}
-            source={require('../../assets/Images/ShoppingCart.png')}
-          />
-        </TouchableOpacity>
-      </View>
+      <LogoHeader />
+
 
       {/* Input */}
-      <View className='mt-10 flex-row items-center bg-gray-200 rounded'>
+      <View className='mx-5 mt-10 flex-row items-center bg-gray-200 rounded'>
         <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
         <TextInput
           placeholder='What do you looking for?'
@@ -46,8 +35,8 @@ const SearchPageCategories = () => {
       {/* Categories */}
       <ScrollView className='mt-10'>
         {categories.map((category, index) => (
-          <TouchableOpacity key={index} className='py-4 border-b border-t border-gray-300'>
-            <Text className='text-lg'>{category}</Text>
+          <TouchableOpacity key={index} className='py-2 border-b border-t border-gray-300'>
+            <Text className='text-lg mx-5'>{category}</Text>
           </TouchableOpacity>
         ))}
       </ScrollView>
