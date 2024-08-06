@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const LogoHeader = () => {
   return (
-      <View className='mt-16 flex flex-row justify-between'>
+      <View className='m-4 mt-12 flex flex-row justify-between'>
         <TouchableOpacity>
           <Image
             style={{ width: 120, height: 40, resizeMode: 'contain' }}

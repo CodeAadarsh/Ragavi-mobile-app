@@ -82,8 +82,8 @@ const SearchPage = () => {
             </View>
 
             {/* Cards */}
-            <View style={styles.cards}
-            className='flex items-center justify-center' >
+            <View 
+            className='flex flex-row flex-wrap' >
                 {/* Cards */}
                 {cardDetails.map((items, index) => (
                     <ProductCard
@@ -102,12 +102,3 @@ const SearchPage = () => {
 }
 
 export default SearchPage
-
-const styles = StyleSheet.create({
-    cards :{
-        flexDirection: 'row',
-        flexWrap : 'wrap',
-        margin: 0,
-        
-    }
-})

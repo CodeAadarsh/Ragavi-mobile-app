@@ -52,15 +52,15 @@ const AccountPage = ({ navigation }) => {
   return (
     <ScrollView className='flex-1 bg-white'>
       {/* Chevron + Header */}
-        <TouchableOpacity>
-      <View className='mt-10 p-8 flex flex-row'>
+      <TouchableOpacity>
+        <View className='mt-10 p-8 flex flex-row'>
           <Image
             className="w-6 h-6"
             source={require('../../assets/Images/Chevron.png')}
           />
-        <Text className='font-bold text-3xl ml-4'>My Account</Text>
-      </View>
-        </TouchableOpacity>
+          <Text className='font-bold text-3xl ml-4'>My Account</Text>
+        </View>
+      </TouchableOpacity>
 
       {/* Profile Image+ Name + Edit Option */}
       <View className='flex justify-center items-center'>
@@ -83,14 +83,16 @@ const AccountPage = ({ navigation }) => {
           <Text className='mx-2'>Edit Profile</Text>
         </TouchableOpacity>
       </View>
+
+
       <View className='mt-10'>
         {menuOptions.map((items, index) => (
           <TouchableOpacity className='p-2 flex flex-row items-center border border-solid border-gray-200 justify-between' key={index}>
             <View className='flex flex-row'>
-            <Image className='h-6 w-6' source={items.icon} />
-            <Text className='ml-4 text-lg'>{items.label}</Text>
+              <Image className='h-6 w-6' source={items.icon} />
+              <Text className='ml-4 text-lg'>{items.label}</Text>
             </View>
-            <Image className='h-6 w-6' source={require('../../assets/Images/ChevronRight.png')}/>
+            <Image className='h-6 w-6' source={require('../../assets/Images/ChevronRight.png')} />
           </TouchableOpacity>
         ))}
 
