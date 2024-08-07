@@ -66,7 +66,7 @@ const OtpPage = () => {
                     </TouchableOpacity>
                     
                     <TouchableOpacity>
-                        <Text className="m-2 mt-4 text-base">Resend</Text>
+                        <Text className="m-2 mt-4 text-base font-light">Resend</Text>
                     </TouchableOpacity>
                 </View>
             </View>

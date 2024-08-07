@@ -89,7 +89,6 @@ const Homepage = () => {
       <View className='justify-center flex flex-row flex-wrap' >
         {/* Cards */}
         {cardDetails.map((items, index) => (
-          <TouchableOpacity>
 
             <ProductCard
               key={index}
@@ -99,7 +98,6 @@ const Homepage = () => {
               discountedPrice={items.discountedPrice}
               path={items.image}
             />
-          </TouchableOpacity>
         ))}
       </View>
 

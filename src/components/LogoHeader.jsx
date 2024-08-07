@@ -1,23 +1,19 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import Logo from '../../assets/SVG_Jsx/Logo'
+import ShoppingBag from '../../assets/SVG_Jsx/ShoppingBag'
 
 const LogoHeader = () => {
   return (
-      <View className='m-4 mt-12 flex flex-row justify-between'>
-        <TouchableOpacity>
-          <Image
-            style={{ width: 120, height: 40, resizeMode: 'contain' }}
-            source={require('../../assets/Images/RagaviLogo.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image
-            style={{ width: 30, height: 30, resizeMode: 'contain' }}
-            source={require('../../assets/Images/ShoppingCart.png')}
-          />
-        </TouchableOpacity>
-      </View>
+    <View className='m-4 mt-12 flex flex-row justify-between'>
+      <TouchableOpacity>
+        <Logo />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <ShoppingBag />
+      </TouchableOpacity>
+    </View>
   )
 }
 

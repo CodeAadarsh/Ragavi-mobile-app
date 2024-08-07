@@ -3,6 +3,7 @@ import React from 'react'
 import ActivityLoading from '../components/ActivityLoading';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import LogoHeader from '../components/LogoHeader';
+import SearchIcon from '../../assets/SVG_Jsx/SearchIcon'
 
 const isLoading = false;
 
@@ -24,8 +25,8 @@ const SearchPageCategories = () => {
 
 
       {/* Input */}
-      <View className='mx-5 mt-10 flex-row items-center bg-gray-200 rounded'>
-        <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
+      <View className='p-1 mx-5 mt-10 flex-row items-center bg-gray-200 rounded'>
+        <SearchIcon/>
         <TextInput
           placeholder='What do you looking for?'
           className='bg-gray-200 h-12 flex-1 px-4'

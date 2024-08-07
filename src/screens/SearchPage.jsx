@@ -59,31 +59,35 @@ const SearchPage = () => {
     ]
 
     return (
-        <ScrollView className='flex-1 p-4 bg-white'>
+        <ScrollView className='flex-1 bg-white'>
 
-            {/* Header */}
-            <LogoHeader />
+            <View className='px-4 mt-5'>
+                {/* Header */}
+                <LogoHeader />
 
-            {/* Input */}
-            <View className='border mt-10 flex-row items-center bg-gray-200 rounded'>
-                <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
-                <TextInput
-                    placeholder='What do you looking for?'
-                    className='bg-gray-200 h-12 flex-1 px-4'
-                />
-            </View>
+                {/* Input */}
 
-            {/* Heading 2 */}
-            <View className='flex flex-row justify-between my-8'>
-                <Text className='text-3xl'>Search Results</Text>
-                <TouchableOpacity>
-                    <Text className='text-lg'>See All</Text>
-                </TouchableOpacity>
+
+                <View className=' border mt-5 flex-row items-center bg-gray-200 rounded'>
+                    <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
+                    <TextInput
+                        placeholder='What do you looking for?'
+                        className='bg-gray-200 h-12 flex-1 px-4'
+                    />
+                </View>
+
+                {/* Heading 2 */}
+                <View className='flex flex-row justify-between my-8'>
+                    <Text className='text-3xl'>Search Results</Text>
+                    <TouchableOpacity>
+                        <Text className='text-lg'>See All</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
 
             {/* Cards */}
-            <View 
-            className='flex flex-row flex-wrap' >
+            <View
+                className='flex flex-row flex-wrap justify-center items-center' >
                 {/* Cards */}
                 {cardDetails.map((items, index) => (
                     <ProductCard

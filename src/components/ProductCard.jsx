@@ -1,9 +1,10 @@
 import { View, Text, Image } from 'react-native';
 import React from 'react';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const ProductCard = ({ discountAmount, itemName, mrp, discountedPrice, path }) => {
   return (
-    <View className="mt-2 w-48 mx-1 shadow-2xl">
+    <TouchableOpacity className="m-1 w-48 shadow-2xl">
       <Image source={path} className="w-full h-80" />
       <View className="absolute top-2 left-2 bg-primary p-2">
         <Text className="text-white text-lg">-{discountAmount}</Text>
@@ -15,7 +16,8 @@ const ProductCard = ({ discountAmount, itemName, mrp, discountedPrice, path }) =
           <Text className="text-primary text-lg">{'\u20B9'}{discountedPrice}</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
+
   );
 };
 
