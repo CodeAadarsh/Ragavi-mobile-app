@@ -5,6 +5,7 @@ const AddressCard = () => {
   return (
     <View className='flex-1 bg-red-300 shadow-xl'>
         <CheckBox />
+        <Text className=''></Text>
       
     </View>
   )
