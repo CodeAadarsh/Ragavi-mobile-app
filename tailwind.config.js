@@ -7,6 +7,9 @@ module.exports = {
         primary: '#db3022',
         secondary: '#f9f9f9',
       },
+      fontFamily:{
+        customFont: ["Frutiger.tff"]
+      },
     },
   },
   plugins: [],

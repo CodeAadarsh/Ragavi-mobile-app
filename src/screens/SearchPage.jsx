@@ -75,7 +75,7 @@ const SearchPage = () => {
 
             {/* Heading 2 */}
             <View className='flex flex-row justify-between my-8'>
-                <Text className='text-3xl'>Search Results</Text>
+                <Text className='text-3xl font-customFont'>Search Results</Text>
                 <TouchableOpacity>
                     <Text className='text-lg'>See All</Text>
                 </TouchableOpacity>

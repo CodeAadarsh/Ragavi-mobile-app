@@ -89,7 +89,7 @@ const Homepage = () => {
       <View className='justify-center flex flex-row flex-wrap' >
         {/* Cards */}
         {cardDetails.map((items, index) => (
-          <TouchableOpacity>
+          <TouchableOpacity key={index}>
 
             <ProductCard
               key={index}
