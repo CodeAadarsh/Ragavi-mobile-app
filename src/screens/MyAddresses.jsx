@@ -1,8 +1,10 @@
-import { View, Text } from 'react-native'
+import { View, Text, CheckBox } from 'react-native'
 import React from 'react'
 import ChevronLeft from '../../assets/SVG_Jsx/ChevronLeft'
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import AddItem from '../../assets/SVG_Jsx/AddItem'
+import AddressCard from '../components/AddressCard';
+import HeaderComponent from '../components/HeaderComponent';
 
 
 const isLoading = false;
@@ -19,7 +21,7 @@ const MyAddresses = () => {
             addressLine1: '34- Jawahar Nagar',
             addressLine2: ' Main Road Agra',
             pincode: '32405',
-            phoneNumber: '3454674154',
+            phoneNumber: '9854674154',
         },
         {
             name: 'Mr Sagar Agarwal',
@@ -43,26 +45,34 @@ const MyAddresses = () => {
             phoneNumber: '3454674154',
         },
     ]
-
+    const headerDetails = 'My Addresses'
     return (
 
-        <View className='flex1 bg-secondary'>
+        <ScrollView className='flex1 bg-secondary'>
 
             {/* My Address Header */}
-            <TouchableOpacity className='bg-secondary p-8 flex flex-row mt-10'>
-                <View className='mt-1'>
-                    <ChevronLeft />
-                </View>
-                <Text className='text-3xl mx-4'>My Addresses</Text>
-            </TouchableOpacity>
+            <HeaderComponent headerDetails={headerDetails} />
 
-            <TouchableOpacity className='p-6 flex flex-row items-center border border-solid border-gray-200'>
+            <TouchableOpacity className='mb-2 p-6 flex flex-row items-center border border-solid border-gray-200'>
 
                 <AddItem />
-                <Text className='text-xl font-normal bg-secondary'>Add A New Address</Text>
+                <Text className=' text-xl font-normal bg-secondary'>Add A New Address</Text>
             </TouchableOpacity>
-
-        </View>
+            
+            {/* Addresses */}
+            <View>
+                {myAddressDetails.map((item, index) => (
+                    <AddressCard
+                    key={index}
+                    name = {item.name}
+                    addLine1 = {item.addressLine1}
+                    addLine2 = {item.addressLine2}
+                    pincode = {item.pincode}
+                    phone = {item.phoneNumber}
+                    />
+                ))}
+            </View>
+        </ScrollView>
     )
 }
 

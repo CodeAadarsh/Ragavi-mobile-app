@@ -12,6 +12,7 @@ import ShippingPolicyIcon from '../../assets/SVG_Jsx/ShippingPolicyIcon'
 import InfluencersIcon from '../../assets/SVG_Jsx/InfluencersIcon'
 import FAQsIcon from '../../assets/SVG_Jsx/FAQsIcon'
 import ChevronRight from '../../assets/SVG_Jsx/ChevronRight'
+import HeaderComponent from '../components/HeaderComponent';
 
 const AccountPage = ({ navigation }) => {
   const menuOptions = [
@@ -66,18 +67,12 @@ const AccountPage = ({ navigation }) => {
 
     },
   ]
-
+  const headerDetails = 'My Account'
   return (
     <ScrollView className='flex-1 bg-white'>
       {/* Chevron + Header */}
       <TouchableOpacity>
-        <View className='mt-10 p-8 flex flex-row'>
-          <Image
-            className="w-6 h-6"
-            source={require('../../assets/Images/Chevron.png')}
-          />
-          <Text className='font-bold text-3xl ml-4'>My Account</Text>
-        </View>
+        <HeaderComponent headerDetails={headerDetails}/>
       </TouchableOpacity>
 
       {/* Profile Image+ Name + Edit Option */}

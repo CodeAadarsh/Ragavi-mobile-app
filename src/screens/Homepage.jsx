@@ -4,6 +4,7 @@ import ActivityLoading from '../components/ActivityLoading';
 import LogoHeader from '../components/LogoHeader';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import ProductCard from '../components/ProductCard';
+import HomePageCh from '../../assets/SVG_Jsx/HomePageCh'
 
 
 const isLoading = false;
@@ -37,7 +38,7 @@ const Homepage = () => {
       itemName: 'Leheriya Kurta Set',
       mrp: '1,999',
       discountedPrice: '1,500',
-      image: require('../../assets/Images/HomepageImg6.png'),
+      image: require('../../assets/Images/Homepageimg3.webp'),
 
     },
     {
@@ -45,7 +46,7 @@ const Homepage = () => {
       itemName: 'Leheriya Kurta Set',
       mrp: '2,999',
       discountedPrice: '1,890',
-      image: require('../../assets/Images/Homepageimg4.png'),
+      image: require('../../assets/Images/Homepageimg4.webp'),
 
     },
     {
@@ -90,14 +91,14 @@ const Homepage = () => {
         {/* Cards */}
         {cardDetails.map((items, index) => (
 
-            <ProductCard
-              key={index}
-              discountAmount={items.discountAmount}
-              itemName={items.itemName}
-              mrp={items.mrp}
-              discountedPrice={items.discountedPrice}
-              path={items.image}
-            />
+          <ProductCard
+            key={index}
+            discountAmount={items.discountAmount}
+            itemName={items.itemName}
+            mrp={items.mrp}
+            discountedPrice={items.discountedPrice}
+            path={items.image}
+          />
         ))}
       </View>
 
@@ -126,10 +127,10 @@ const Homepage = () => {
 
         <View className='flex justify-center items-center'>
           <TouchableOpacity>
-            <Image source={require('../../assets/Images/HomepageImg7.png')} />
+            <HomePageCh />
           </TouchableOpacity>
           <TouchableOpacity>
-            <Image source={require('../../assets/Images/HomepageImg7.png')} />
+            <HomePageCh />
           </TouchableOpacity>
         </View>
       </View>
@@ -163,7 +164,7 @@ const Homepage = () => {
       <Text className='text-3xl text-center m-2'>#Ragavi On Instagram</Text>
       <Pressable onPress={() => { console.log('image is pressed') }}
         className='flex items-center my-4 justify-center'>
-        <Image className='w-11/12' source={require('../../assets/Images/HomepageImg12.png')} />
+        <Image className='w-11/12' source={require('../../assets/Images/HomePageImg13.webp')} />
       </Pressable>
 
     </ScrollView>

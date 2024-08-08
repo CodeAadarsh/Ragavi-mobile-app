@@ -1,13 +1,45 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, Touchable } from 'react-native'
+import React, { useState } from 'react'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
-const AddressCard = () => {
+const AddressCard = ({ name, addLine1, addLine2, pincode, phone }) => {
+
+  const [isPressed, setIsPressed] = useState(false)
   return (
-    <View className='flex-1 bg-red-300 shadow-xl'>
-        <CheckBox />
-        <Text className=''></Text>
-      
+
+    <View className='bg-white shadow-2xl  m-2'>
+
+      {/* Name + Edit Button */}
+      <TouchableOpacity
+      onPress={() => setIsPressed(!isPressed)}
+      >
+      <View className={`border border-solid absolute top-2 left-2  bg-white w-4 h-4 ${isPressed ?  'bg-primary' : '' }`}>
+
+      </View>
+      </TouchableOpacity>
+      <View className='py-4 px-10'>
+        <View className='flex flex-row justify-between'>
+          <Text className='text-2xl'>{name} </Text>
+          <TouchableOpacity >
+            <Text className='text-lg font-light underline'>Edit</Text>
+          </TouchableOpacity>
+        </View>
+
+        <Text className='text-lg mt-2 font-normal'>
+          {addLine1}
+        </Text>
+        <Text className='text-lg font-normal mb-2'>
+          {addLine2}
+        </Text>
+        <Text className='text-lg font-normal'>
+          {phone}
+        </Text>
+        <Text className='text-lg font-normal'>
+          Pincode -{pincode}
+        </Text>
+      </View>
     </View>
+
   )
 }
 

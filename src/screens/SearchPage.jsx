@@ -61,37 +61,31 @@ const SearchPage = () => {
     return (
         <ScrollView className='flex-1 bg-white'>
 
-            <View className='px-4 mt-5'>
+            <View className=' mt-5'>
                 {/* Header */}
-                <LogoHeader />
+                <View className='px-4'>
+                    <LogoHeader />
 
-                {/* Input */}
+                    {/* Input */}
 
 
+                    <View className=' border mt-5 flex-row items-center bg-gray-200 rounded'>
+                        <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
+                        <TextInput
+                            placeholder='What do you looking for?'
+                            className='bg-gray-200 h-12 flex-1 px-4'
+                        />
+                    </View>
 
-                <View className=' border mt-5 flex-row items-center bg-gray-200 rounded'>
-                    <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
-                    <TextInput
-                        placeholder='What do you looking for?'
-                        className='bg-gray-200 h-12 flex-1 px-4'
-                    />
-                </View>
+                    {/* Heading 2 */}
+                    <View className='flex flex-row justify-between my-8'>
+                        <Text className='text-3xl'>Search Results</Text>
+                        <TouchableOpacity>
+                            <Text className='text-lg'>See All</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                {/* Heading 2 */}
-                <View className='flex flex-row justify-between my-8'>
-                    <Text className='text-3xl'>Search Results</Text>
-                    <TouchableOpacity>
-                        <Text className='text-lg'>See All</Text>
-                    </TouchableOpacity>
-                </View>
-
-                {/* Heading 2 */}
-                <View className='flex flex-row justify-between my-8'>
-                    <Text className='text-3xl font-customFont'>Search Results</Text>
-                    <TouchableOpacity>
-                        <Text className='text-lg'>See All</Text>
-                    </TouchableOpacity>
-
+                    
                 </View>
 
                 {/* Cards */}

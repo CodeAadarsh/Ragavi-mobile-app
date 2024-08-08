@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const ProductCard = ({ discountAmount, itemName, mrp, discountedPrice, path }) => {
   return (
     <TouchableOpacity className="m-1 w-48 shadow-2xl">
-      <Image source={path} className="w-full h-80" />
+      <Image source={path} className="w-full h-60" />
       <View className="absolute top-2 left-2 bg-primary p-2">
         <Text className="text-white text-lg">-{discountAmount}</Text>
       </View>
