@@ -4,6 +4,7 @@ import ActivityLoading from '../components/ActivityLoading';
 import LogoHeader from '../components/LogoHeader';
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import ProductCard from '../components/ProductCard';
+import AddToWish from '../../assets/SVG_Jsx/AddToWish'
 
 const isLoading = false;
 
@@ -13,47 +14,59 @@ const SearchPage = () => {
         {
             discountAmount: '20%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹4,999',
-            discountedPrice: '₹3,990',
+            mrp: '4,999',
+            discountedPrice: '3,990',
             image: require('../../assets/Images/CardImg1.png'),
+            selectType: <AddToWish />
+
         },
         {
             discountAmount: '25%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹1,999',
-            discountedPrice: '₹1,500',
+            mrp: '1,999',
+            discountedPrice: '1,500',
             image: require('../../assets/Images/CardImg2.png'),
+            selectType: <AddToWish />
+
 
         },
         {
             discountAmount: '16%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹2,999',
-            discountedPrice: '₹1,890',
+            mrp: '2,999',
+            discountedPrice: '1,890',
             image: require('../../assets/Images/CardImg3.png'),
+            selectType: <AddToWish />
+
 
         },
         {
             discountAmount: '20%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹4,999',
-            discountedPrice: '₹3,990',
+            mrp: '4,999',
+            discountedPrice: '3,990',
             image: require('../../assets/Images/CardImg4.png'),
+            selectType: <AddToWish />
+
 
         },
         {
             discountAmount: '20%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹4,999',
-            discountedPrice: '₹3,990',
+            mrp: '4,999',
+            discountedPrice: '3,990',
             image: require('../../assets/Images/CardImg1.png'),
+            selectType: <AddToWish />
+
         },
         {
             discountAmount: '16%',
             itemName: 'Leheriya Kurta Set',
-            mrp: '₹2,999',
-            discountedPrice: '₹1,890',
+            mrp: '2,999',
+            discountedPrice: '1,890',
             image: require('../../assets/Images/CardImg3.png'),
+            selectType: <AddToWish />
+
 
         },
     ]
@@ -85,7 +98,7 @@ const SearchPage = () => {
                         </TouchableOpacity>
                     </View>
 
-                    
+
                 </View>
 
                 {/* Cards */}
@@ -100,6 +113,7 @@ const SearchPage = () => {
                             mrp={items.mrp}
                             discountedPrice={items.discountedPrice}
                             path={items.image}
+                            selectType={items.selectType}
                         />
                     ))}
                 </View>

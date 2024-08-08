@@ -5,7 +5,7 @@ import LogoHeader from '../components/LogoHeader';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import ProductCard from '../components/ProductCard';
 import HomePageCh from '../../assets/SVG_Jsx/HomePageCh'
-
+import AddToWish from '../../assets/SVG_Jsx/AddToWish'
 
 const isLoading = false;
 
@@ -32,6 +32,7 @@ const Homepage = () => {
       mrp: '4,999',
       discountedPrice: '3,990',
       image: require('../../assets/Images/HomepageImg2.png'),
+      selectType : <AddToWish/>
     },
     {
       discountAmount: '25%',
@@ -39,6 +40,8 @@ const Homepage = () => {
       mrp: '1,999',
       discountedPrice: '1,500',
       image: require('../../assets/Images/Homepageimg3.webp'),
+      selectType : <AddToWish/>
+
 
     },
     {
@@ -47,6 +50,8 @@ const Homepage = () => {
       mrp: '2,999',
       discountedPrice: '1,890',
       image: require('../../assets/Images/Homepageimg4.webp'),
+      selectType : <AddToWish/>
+
 
     },
     {
@@ -55,6 +60,8 @@ const Homepage = () => {
       mrp: '4,999',
       discountedPrice: '3,990',
       image: require('../../assets/Images/Homepageimg5.png'),
+      selectType : <AddToWish/>
+
 
     },
 
@@ -98,6 +105,7 @@ const Homepage = () => {
             mrp={items.mrp}
             discountedPrice={items.discountedPrice}
             path={items.image}
+            selectType={items.selectType}
           />
         ))}
       </View>
