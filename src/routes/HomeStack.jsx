@@ -13,6 +13,7 @@ import MyAddressForm from '../screens/MyAddressForm';
 import MyOrders from '../screens/MyOrders';
 import WishList from '../screens/WishList';
 import MyCart from '../screens/MyCart';
+import ContactUs from '../screens/ContactUs';
 
 const Stack = createStackNavigator();
 
@@ -22,7 +23,7 @@ export default function HomeStack() {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={MyCart} options={{headerShown:false}} />
+      <Stack.Screen name="Home" component={ContactUs} options={{headerShown:false}} />
       {/* <Stack.Screen name="Notifications" component={Notifications} /> */}
       {/* <Stack.Screen name="Profile" component={Profile} /> */}
       {/* <Stack.Screen name="Settings" component={Settings} /> */}

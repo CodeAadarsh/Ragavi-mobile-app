@@ -2,8 +2,8 @@ import * as React from "react";
 import Svg, { G, Path, Defs, ClipPath, Rect } from "react-native-svg";
 const SVGComponent = (props) => (
   <Svg
-    width={15}
-    height={17}
+    width={30}
+    height={30}
     viewBox="0 0 15 17"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
