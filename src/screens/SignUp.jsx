@@ -1,7 +1,6 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity,TextInput } from 'react-native'
 import React from 'react'
 import ActivityLoading from '../components/ActivityLoading'
-import { TextInput } from 'react-native-gesture-handler';
 
 
 const isLoading = false;

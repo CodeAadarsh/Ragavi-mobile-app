@@ -21,20 +21,20 @@ const AddressCard = ({ name, addLine1, addLine2, pincode, phone }) => {
         <View className='flex flex-row justify-between'>
           <Text className='text-2xl'>{name} </Text>
           <TouchableOpacity >
-            <Text className='text-lg font-light underline'>Edit</Text>
+            <Text className='text-base font-light underline'>Edit</Text>
           </TouchableOpacity>
         </View>
 
-        <Text className='text-lg mt-2 font-normal'>
+        <Text className='text-base mt-2 font-normal'>
           {addLine1}
         </Text>
-        <Text className='text-lg font-normal mb-2'>
+        <Text className='text-base font-normal mb-2'>
           {addLine2}
         </Text>
-        <Text className='text-lg font-normal'>
+        <Text className='text-base font-normal'>
           {phone}
         </Text>
-        <Text className='text-lg font-normal'>
+        <Text className='text-base font-normal'>
           Pincode -{pincode}
         </Text>
       </View>

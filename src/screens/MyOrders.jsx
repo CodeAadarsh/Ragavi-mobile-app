@@ -4,9 +4,12 @@ import MyAddressForm from './MyAddressForm'
 import HeaderComponent from '../components/HeaderComponent'
 import OrderCard from '../components/OrderCard'
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler'
+import { styled } from 'nativewind'
 
 const MyOrders = () => {
-
+  const StyledView = styled(View);
+  const StyledText = styled(Text);
+  const StyledTouchableOpacity = styled(TouchableOpacity);
 
   const orderDetails = [ 
     {
@@ -57,31 +60,37 @@ const MyOrders = () => {
   const headerDetails = 'My Orders'
 
   return (
-    <ScrollView className='flex-1'>
-      <HeaderComponent headerDetails={headerDetails} />
+    <>
+     <HeaderComponent headerDetails={headerDetails} />
+     
+     <View className='flex flex-row items-center  justify-evenly pb-4'>
+       <TouchableOpacity className='bg-primary w-40 h-8 shadow-2xl flex justify-center items-center'>
+         <Text className='text-white font-normal text-sm'>Delivered</Text>
+       </TouchableOpacity>
+       <TouchableOpacity className='w-40 h-8 shadow-2xl flex justify-center items-center'>
+         <Text className='text-sm font-normal'>Processing</Text>
+       </TouchableOpacity>
+     </View>
+     <ScrollView  showsVerticalScrollIndicator={false} className='flex-1'>
 
-      <View className='flex flex-row justify-around'>
-        <TouchableOpacity className='bg-primary w-40 h-10 shadow-2xl flex justify-center items-center'>
-          <Text className='text-white font-normal text-lg'>Delivered</Text>
-        </TouchableOpacity>
-        <TouchableOpacity className='border border-solid bg-white w-40 h-10 shadow-2xl flex justify-center items-center'>
-          <Text className='text-lg font-normal'>Processing</Text>
-        </TouchableOpacity>
-      </View>
-      <View className='mt-8'>
-      {orderDetails.map((items, index) => (
-        <OrderCard
-        key={index}
-        orderNumber = {items.orderNumber}
-        date = {items.date}
-        trackNumber = {items.trackNumber}
-        quantity = {items.quantity}
-        total = {items.total}
-        status={items.status}
-        />
-      ))}
-      </View>
-    </ScrollView>
+     
+
+     <View className='mt-8'>
+     {orderDetails.map((items, index) => (
+       <OrderCard
+       key={index}
+       orderNumber = {items.orderNumber}
+       date = {items.date}
+       trackNumber = {items.trackNumber}
+       quantity = {items.quantity}
+       total = {items.Total}
+       status={items.status}
+       />
+     ))}
+     </View>
+   </ScrollView>
+    </>
+   
   )
 }
 

@@ -72,33 +72,40 @@ const WishList = () => {
 
     const headerDetails = 'WishList'
     return (
-        <ScrollView className='flex'>
-
-            {/* Header */}
-            <HeaderComponent
+        <>
+           <HeaderComponent
                 headerDetails={headerDetails}
             />
-            {/* Number of results */}
-            <View className='border border-solid border-gray-300 p-5 px-8'>
+            <View className='border border-solid border-gray-300 px-8 py-4 '>
                 <Text className='text-lg '>{cardDetails.length} Results</Text>
             </View>
-            {/* Cards */}
-            <View className='flex flex-row flex-wrap justify-between '>
-                {cardDetails.map((items, index) => (
-                    <View className=" w-1/2 items-center justify-center">
-                    <ProductCard
-                        key={index}
-                        discountAmount={items.discountAmount}
-                        itemName={items.itemName}
-                        mrp={items.mrp}
-                        discountedPrice={items.discountedPrice}
-                        path={items.image}
-                        selectType={items.selectType}
-                    />
-                    </View>
-                ))}
-            </View>
-        </ScrollView>
+             <ScrollView  showsVerticalScrollIndicator={false} className='flex'>
+
+{/* Header */}
+
+{/* Number of results */}
+
+{/* Cards */}
+<View className='flex flex-row flex-wrap justify-between '>
+    {cardDetails.map((items, index) => (
+        <View 
+        key={index}
+        className=" w-1/2 items-center justify-center">
+        <ProductCard
+            discountAmount={items.discountAmount}
+            itemName={items.itemName}
+            mrp={items.mrp}
+            discountedPrice={items.discountedPrice}
+            path={items.image}
+            selectType={items.selectType}
+            fromWhere="wish"
+        />
+        </View>
+    ))}
+</View>
+</ScrollView>
+        </>
+       
     )
 }
 

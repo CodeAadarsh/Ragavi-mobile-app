@@ -6,7 +6,7 @@ import ChevronLeft from '../../assets/SVG_Jsx/ChevronLeft'
 const HeaderComponent = ( { headerDetails} ) => {
   return (
     <View>
-       <TouchableOpacity className='p-8 flex items-center flex-row pt-16'>
+       <TouchableOpacity className='px-8 py-4 flex items-center flex-row pt-16'>
                 <View className='mt-1'>
                     <ChevronLeft />
                 </View>

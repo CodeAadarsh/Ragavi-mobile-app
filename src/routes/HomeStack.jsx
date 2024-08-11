@@ -23,7 +23,7 @@ export default function HomeStack() {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={WishList} options={{headerShown:false}} />
+      <Stack.Screen name="Home" component={Productspage} options={{headerShown:false}} />
       {/* <Stack.Screen name="Notifications" component={Notifications} /> */}
       {/* <Stack.Screen name="Profile" component={Profile} /> */}
       {/* <Stack.Screen name="Settings" component={Settings} /> */}

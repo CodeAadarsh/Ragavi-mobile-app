@@ -5,25 +5,25 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 const OrderCard = ({ orderNumber, date, trackNumber, quantity, total, status }) => {
 
     return (
-        <TouchableOpacity className='m-2 mx-8 shadow-2xl p-4 bg-white'>
+        <TouchableOpacity className='my-2 mx-6 shadow-2xl p-4 bg-white'>
             <View className='flex flex-row my-3 justify-between'>
-                <Text className='text-xl'>
+                <Text className='text-base font-bold'>
                     Order No{orderNumber}
                 </Text>
                 <Text className=''>
                     {date}
                 </Text>
             </View>
-            <Text className='font-normal text-lg'>
+            <Text className='font-normal text-base'>
                 Tracking Number : {trackNumber}
             </Text>
-            <View className='flex flex-row justify-between my-3'>
-                <Text className='text-lg font-normal'> Quantity : {quantity} </Text>
-                <Text className='text-lg font-normal'> Total Amount ₹{total} </Text>
+            <View className='flex flex-row justify-between '>
+                <Text className='text-base font-normal'> Quantity : {quantity} </Text>
+                <Text className='text-base font-normal'> Total Amount:  ₹ {total} </Text>
             </View>
             <View className='flex flex-row justify-between my-3'>
-                <Text className='text-lg font-normal underline'> Details </Text>
-                <Text className='text-lg font-normal text-green-600'>{status}</Text>
+                <Text className='text-base font-normal underline'> Details </Text>
+                <Text className='text-base font-normal text-green-600'>{status}</Text>
             </View>
         </TouchableOpacity>
     )

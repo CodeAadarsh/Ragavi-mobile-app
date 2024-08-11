@@ -69,12 +69,13 @@ const AccountPage = ({ navigation }) => {
   ]
   const headerDetails = 'My Account'
   return (
-    <ScrollView className='flex-1 bg-white'>
-      {/* Chevron + Header */}
-      <TouchableOpacity>
+    <>
+       <TouchableOpacity>
         <HeaderComponent headerDetails={headerDetails}/>
       </TouchableOpacity>
-
+      <ScrollView  showsVerticalScrollIndicator={false} className='flex-1 '>
+      {/* Chevron + Header */}
+   
       {/* Profile Image+ Name + Edit Option */}
       <View className='flex justify-center items-center'>
         {/* Profile Image */}
@@ -86,14 +87,14 @@ const AccountPage = ({ navigation }) => {
         </TouchableOpacity>
 
         {/* Profile Name */}
-        <Text className='text-2xl p-2'>Johnny Crow Senior</Text>
+        <Text className='text-xl font-semibold p-2'>Johnny Crow Senior</Text>
 
         {/* Edit Profile  */}
         <TouchableOpacity className='flex flex-row p-1 border-2 border-solid items-center justify-center'>
           <Image
             className='h-3 w-3'
             source={require('../../assets/Images/EditProfile.png')} />
-          <Text className='mx-2'>Edit Profile</Text>
+          <Text className='mx-2 text-xs'>Edit Profile</Text>
         </TouchableOpacity>
       </View>
 
@@ -102,8 +103,10 @@ const AccountPage = ({ navigation }) => {
         {menuOptions.map((items, index) => (
           <TouchableOpacity className='p-1 flex flex-row items-center border border-solid border-gray-200 justify-between' key={index}>
             <View className='flex flex-row'>
+              <View className="items-center justify-center pl-2">
               {items.pagename}
-              <Text className='ml-4 text-lg font-normal'>{items.label}</Text>
+              </View>
+              <Text className='ml-4 text-base font-normal'>{items.label}</Text>
             </View>
             <ChevronRight/>
           </TouchableOpacity>
@@ -111,6 +114,9 @@ const AccountPage = ({ navigation }) => {
 
       </View>
     </ScrollView>
+
+    </>
+  
   );
 }
 

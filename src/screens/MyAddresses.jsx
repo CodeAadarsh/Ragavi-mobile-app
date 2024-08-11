@@ -48,7 +48,7 @@ const MyAddresses = () => {
     const headerDetails = 'My Addresses'
     return (
 
-        <ScrollView className='flex1 bg-secondary'>
+        <ScrollView  showsVerticalScrollIndicator={false} className='flex1 bg-secondary'>
 
             {/* My Address Header */}
             <HeaderComponent headerDetails={headerDetails} />

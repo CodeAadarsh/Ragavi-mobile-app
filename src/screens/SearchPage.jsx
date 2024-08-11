@@ -106,8 +106,10 @@ const SearchPage = () => {
                     className='flex flex-row flex-wrap justify-center items-center' >
                     {/* Cards */}
                     {cardDetails.map((items, index) => (
+                        <View   key={index} className="w-1/2 items-center ">
+
                         <ProductCard
-                            key={index}
+                          
                             discountAmount={items.discountAmount}
                             itemName={items.itemName}
                             mrp={items.mrp}
@@ -115,6 +117,8 @@ const SearchPage = () => {
                             path={items.image}
                             selectType={items.selectType}
                         />
+                        </View>
+
                     ))}
                 </View>
             </View>
