@@ -6,8 +6,12 @@ import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import ProductCard from '../components/ProductCard';
 import HomePageCh from '../../assets/SVG_Jsx/HomePageCh'
 import AddToWish from '../../assets/SVG_Jsx/AddToWish'
+import { styled } from 'nativewind';
 
 const isLoading = false;
+const StyledView = styled(View);
+const StyledText = styled(Text);
+const StyledTouchableOpacity = styled(TouchableOpacity);
 
 
 const Homepage = () => {
@@ -84,35 +88,41 @@ const Homepage = () => {
 
       {/* New Arrivals */}
 
-      <View className='flex flex-row justify-between p-4'>
-        <Text className='text-3xl'>
+      <StyledView className="flex flex-row justify-between p-4">
+        <StyledText className="text-3xl">
           New Arrivals
-        </Text>
-        <TouchableOpacity>
-          <Text className='text-lg font-normal'>
+        </StyledText>
+        <StyledTouchableOpacity>
+          <StyledText className="text-lg font-normal">
             See All
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <View className='justify-center flex flex-row flex-wrap' >
+          </StyledText>
+        </StyledTouchableOpacity>
+      </StyledView>
+
+      {/* Grid Layout */}
+      <StyledView className="flex flex-row flex-wrap justify-between ">
         {/* Cards */}
         {cardDetails.map((items, index) => (
-
-          <ProductCard
+          <StyledView
             key={index}
-            discountAmount={items.discountAmount}
-            itemName={items.itemName}
-            mrp={items.mrp}
-            discountedPrice={items.discountedPrice}
-            path={items.image}
-            selectType={items.selectType}
-          />
+            className="w-[50%] mb-4"
+          >
+            <ProductCard
+              discountAmount={items.discountAmount}
+              itemName={items.itemName}
+              mrp={items.mrp}
+              discountedPrice={items.discountedPrice}
+              path={items.image}
+              selectType={items.selectType}
+            />
+          </StyledView>
         ))}
-      </View>
+      </StyledView>
+  
 
       {/* Exclusive for You */}
       <View>
-        <View className='flex flex-row justify-between p-4'>
+        <StyledView className='flex flex-row justify-between p-4'>
           <Text className='text-3xl'>
             Excusive For You
           </Text>
@@ -121,7 +131,7 @@ const Homepage = () => {
               See All
             </Text>
           </TouchableOpacity>
-        </View>
+        </StyledView>
 
         <View className='flex flex-wrap flex-row items-center justify-center p-2'>
           <TouchableOpacity>
