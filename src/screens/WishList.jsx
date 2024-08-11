@@ -1,12 +1,15 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import HeaderComponent from '../components/HeaderComponent'
 import ProductCard from '../components/ProductCard'
 import { ScrollView } from 'react-native-gesture-handler'
 import AddToBag from '../../assets/SVG_Jsx/AddToBag'
+import { styled } from 'nativewind'
 
 const WishList = () => {
-
+    const StyledView = styled(View);
+    const StyledText = styled(Text);
+    const StyledTouchableOpacity = styled(TouchableOpacity);
     const cardDetails = [
         {
             discountAmount: '20%',
@@ -80,8 +83,9 @@ const WishList = () => {
                 <Text className='text-lg '>{cardDetails.length} Results</Text>
             </View>
             {/* Cards */}
-            <View className='flex-row items-center  flex-wrap mt-3'>
+            <View className='flex flex-row flex-wrap justify-between '>
                 {cardDetails.map((items, index) => (
+                    <View className=" w-1/2 items-center justify-center">
                     <ProductCard
                         key={index}
                         discountAmount={items.discountAmount}
@@ -91,6 +95,7 @@ const WishList = () => {
                         path={items.image}
                         selectType={items.selectType}
                     />
+                    </View>
                 ))}
             </View>
         </ScrollView>

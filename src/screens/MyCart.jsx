@@ -66,13 +66,13 @@ const MyCart = () => {
   const headerDetails = 'My Cart'
 
   return (
-
-    <ScrollView>
+<>
+<HeaderComponent headerDetails={headerDetails} />
+<ScrollView   showsVerticalScrollIndicator={false} >
       {/* Header */}
-      <HeaderComponent headerDetails={headerDetails} />
 
 
-      <View className='flex flex-row justify-between mb-2 p-6 border border-solid border-gray-200'>
+      <View className='flex flex-row justify-between mb-2 px-8 py-4 border border-solid border-gray-200'>
         <Text>Total Amount</Text>
         <Text>₹ {totalPrice}</Text>
       </View>
@@ -91,7 +91,9 @@ const MyCart = () => {
           />
         ))}
       </View>
-      <View className='mt-auto m-10 flex flex-row justify-between'>
+      
+    </ScrollView>
+    <View className='mt-auto mx-3 my-4 flex flex-row justify-between'>
         <Text className='text-lg font-normal'>Total Amount</Text>
         <Text className='text-lg'>₹ {totalPrice}</Text>
       </View>
@@ -103,7 +105,8 @@ const MyCart = () => {
         </TouchableOpacity>
       </View>
 
-    </ScrollView>
+</>
+
   )
 }
 

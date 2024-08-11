@@ -72,12 +72,14 @@ const Homepage = () => {
   ]
 
   return (
-    <ScrollView className="flex-1 ">
-
-      {/* Header */}
-      <View>
+    <>
+         <View>
         <LogoHeader />
       </View>
+    <ScrollView  showsVerticalScrollIndicator={false} className="flex-1 ">
+
+      {/* Header */}
+ 
 
       {/* Carousal Code Not yet done */}
       <Pressable onPress={() => { console.log('image is pressed') }}
@@ -186,6 +188,8 @@ const Homepage = () => {
       </Pressable>
 
     </ScrollView>
+    </>
+
   )
 }
 

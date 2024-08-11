@@ -6,11 +6,11 @@ import ChevronLeft from '../../assets/SVG_Jsx/ChevronLeft'
 const HeaderComponent = ( { headerDetails} ) => {
   return (
     <View>
-       <TouchableOpacity className='p-8 flex flex-row pt-16'>
+       <TouchableOpacity className='p-8 flex items-center flex-row pt-16'>
                 <View className='mt-1'>
                     <ChevronLeft />
                 </View>
-                <Text className='text-3xl mx-4'>{headerDetails}</Text>
+                <Text className='text-xl font-semibold mx-4'>{headerDetails}</Text>
             </TouchableOpacity>
     </View>
   )
