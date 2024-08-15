@@ -13,57 +13,71 @@ import InfluencersIcon from '../../assets/SVG_Jsx/InfluencersIcon'
 import FAQsIcon from '../../assets/SVG_Jsx/FAQsIcon'
 import ChevronRight from '../../assets/SVG_Jsx/ChevronRight'
 import HeaderComponent from '../components/HeaderComponent';
+import { useNavigation } from '@react-navigation/native';
 
-const AccountPage = ({ navigation }) => {
+const AccountPage = ({ }) => {
+  const navigation = useNavigation();
+
   const menuOptions = [
     {
       label: 'My Orders',
-      pagename : <MyOrdersIcon/>
+      pagename : <MyOrdersIcon/>,
+      navigation: "MyOrders"
     },
     {
       label: 'Address Book',
-      pagename: <AddressBook/>
+      pagename: <AddressBook/>,
+      navigation: "MyAddresses"
     },
     {
       label: 'My Gift Card',
-      pagename: <GiftCardIcon/>
+      pagename: <GiftCardIcon/>,
+      navigation: "Error404"
     },
     {
       label: 'My Rewards',
-      pagename: <RewardIcon/>
+      pagename: <RewardIcon/>,
+      navigation: "Error404"
     },
     {
       label: 'Size Chart',
-      pagename: <SizeChartIcon/>
+      pagename: <SizeChartIcon/>,
+      navigation: "Error404"
     },
     {
       label: 'Contact Us',
-      pagename: <ContactIcon/>
+      pagename: <ContactIcon/>,
+      navigation: "ContactUs"
 
     },
     {
       label: 'WholeSale',
-      pagename: <WholesaleIcon/>
+      pagename: <WholesaleIcon/>,
+      navigation: "Error404"
 
     },
     {
       label: 'Privacy Policy',
-      pagename: <PrivacyPolicyIcon/>
+      pagename: <PrivacyPolicyIcon/>,
+      navigation: "Error404"
 
     },
     {
       label: 'Shipping Policy',
-      pagename: <ShippingPolicyIcon/>
+      pagename: <ShippingPolicyIcon/>,
+      navigation: "Error404"
 
     },
     {
       label: 'Influencers',
-      pagename: <InfluencersIcon/>
+      pagename: <InfluencersIcon/>,
+      navigation: "Error404"
 
     },
     {
       label: 'FAQs',
-      pagename: <FAQsIcon/>
+      pagename: <FAQsIcon/>,
+      navigation: "Error404"
 
     },
   ]
@@ -101,7 +115,7 @@ const AccountPage = ({ navigation }) => {
 
       <View className='mt-10'>
         {menuOptions.map((items, index) => (
-          <TouchableOpacity className='p-1 flex flex-row items-center border border-solid border-gray-200 justify-between' key={index}>
+          <TouchableOpacity onPress={()=>navigation.navigate(items.navigation)} className='p-1 flex flex-row items-center border border-solid border-gray-200 justify-between' key={index}>
             <View className='flex flex-row'>
               <View className="items-center justify-center pl-2">
               {items.pagename}

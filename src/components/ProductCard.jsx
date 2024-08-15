@@ -12,10 +12,8 @@ const ProductCard = ({ discountAmount, itemName, mrp, discountedPrice, path, sel
       <Image source={path} className="w-full h-72" />
      
       
-      <TouchableOpacity className="absolute bottom-2 right-2">
-        <Text>
+      <TouchableOpacity className="absolute bottom-2  right-2">
           {selectType}
-        </Text>
       </TouchableOpacity>
   
 
