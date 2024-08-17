@@ -13,20 +13,20 @@ const EditProfile = () => {
                 <View className='ml-14 mr-4'>
                     <Text className='text-lg font-bold'>Provile details about yourself and any other pertinent information.</Text>
                 </View>
-                <View className='border border-gray-200 my-5'></View>
+                <View className='border border-gray-200 mt-5'></View>
             </View>
             <ScrollView className='flex-1 p-5'>
                 {/* Profile Images */}
                 <View className='flex flex-row'>
                     <View className=''>
                         <Image
-                            className='w-24 h-24'
+                            className='w-20 h-20'
                             source={require('../../assets/Images/Vector.png')}
                         />
                     </View>
                     {/* Profile Image Header */}
                     <View className='flex flex-col mx-6'>
-                        <Text className='text-xl my-4 font-bold'>Basic Information</Text>
+                        <Text className='text-xl my-2 font-bold'>Basic Information</Text>
                         <Text className='text-lg font-bold'>Profile Photo</Text>
                         <View className='flex flex-row my-1'>
                             <Text className='text-base text-primary font-bold  mr-3'>Change </Text>
