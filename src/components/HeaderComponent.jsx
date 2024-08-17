@@ -7,10 +7,10 @@ const HeaderComponent = ( { headerDetails} ) => {
   return (
     <View>
        <TouchableOpacity className='px-8 py-4 flex items-center flex-row pt-16'>
-                <View className='mt-1'>
+                <View className=''>
                     <ChevronLeft />
                 </View>
-                <Text className='text-xl font-semibold mx-4'>{headerDetails}</Text>
+                <Text className='text-2xl mx-4'>{headerDetails}</Text>
             </TouchableOpacity>
     </View>
   )

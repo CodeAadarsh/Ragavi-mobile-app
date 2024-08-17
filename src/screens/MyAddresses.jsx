@@ -17,6 +17,13 @@ const MyAddresses = () => {
     }
     const myAddressDetails = [
         {
+            name: 'Mr John Doe',
+            addressLine1: '639 Frami Island, Glennburgh',
+            addressLine2: ' WA 49310, 639 Frami Island,Germany',
+            pincode: '32405',
+            phoneNumber: '3454674154',
+        },
+        {
             name: 'Mr Suresh Singh',
             addressLine1: '34- Jawahar Nagar',
             addressLine2: ' Main Road Agra',
@@ -53,14 +60,14 @@ const MyAddresses = () => {
             {/* My Address Header */}
             <HeaderComponent headerDetails={headerDetails} />
 
-            <TouchableOpacity className='mb-2 p-6 flex flex-row items-center border border-solid border-gray-200'>
+            <TouchableOpacity className='mb-4 p-3 flex flex-row items-center border border-solid border-gray-200'>
 
                 <AddItem />
-                <Text className=' text-xl font-normal bg-secondary'>Add A New Address</Text>
+                <Text className=' text-base  bg-secondary'>Add A New Address</Text>
             </TouchableOpacity>
             
             {/* Addresses */}
-            <View>
+            <View className='shadow-2xl'>
                 {myAddressDetails.map((item, index) => (
                     <AddressCard
                     key={index}
