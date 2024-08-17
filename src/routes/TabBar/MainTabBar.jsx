@@ -5,6 +5,16 @@ import WishList from '../../screens/WishList';
 import MyCart from '../../screens/MyCart';
 import AccountPage from '../../screens/AccountPage';
 import AccountpageRoutes from '../Accountpage/AccountpageRoutes';
+import LoginPage from '../../screens/LoginPage';
+import SignUp from '../../screens/SignUp';
+import OtpPage from '../../screens/OtpPage';
+import MobileLogin from '../../screens/MobileLogin';
+import ForgotPassword from '../../screens/ForgotPassword';
+import MyRewards from '../../screens/MyRewards';
+import MyOrders from '../../screens/MyOrders';
+import MyOrders1 from '../../screens/MyOrders1';
+import EditProfile from '../../screens/EditProfile';
+
 const Tab = createBottomTabNavigator();
 
 function MainTabBar() {
@@ -35,6 +45,7 @@ function MainTabBar() {
     <Tab.Screen name="WishList" component={WishList} />
     <Tab.Screen name="MyCart" component={MyCart} />
     <Tab.Screen name="AccountPage" component={AccountpageRoutes} />
+    <Tab.Screen name="Rewards" component={EditProfile} />
   </Tab.Navigator>
   );
 }

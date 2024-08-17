@@ -14,11 +14,11 @@ const LoginPage = () => {
     }
     return (
         // Main View for the whole page
-        <View className="flex-1 p-6 bg-secondary">
+        <View className="flex-1 p-3 bg-secondary">
 
 
             {/* For the Chevron Icon */}
-            <TouchableOpacity className="mt-12">
+            <TouchableOpacity className="mt-16">
                 <Image
                     className="w-5 h-5"
                     source={require('../../assets/Images/Chevron.png')}
@@ -31,29 +31,24 @@ const LoginPage = () => {
 
                 {/* Login Heading */}
                 <Text className=" text-5xl">
-                    Login
+                    Enter Your Mobile Number
                 </Text>
 
                 {/* Email, Password Inputs */}
-                <View className='mt-14'>
+                <View className='mt-10'>
                     <TextInput
-                        placeholder='Email'
+                        placeholder='Mobile Number'
                         className="h-16 my-2 w-full shadow-xl  text-lg p-4 bg-white text-gray-400"
                     />
-                    <TextInput
-                        placeholder='Password'
-                        className=" h-16 w-full my-2 shadow-xl bg-white text-lg p-4 text-gray-400"
-                    />
-
                 </View>
 
                 {/* Login Button */}
                 <TouchableOpacity className='mt-6 shadow-2xl justify-center items-center w-full h-14 bg-primary'>
-                    <Text className='text-2xl text-white'>LOGIN</Text>
+                    <Text className='text-2xl text-white'>Send OTP</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity className="m-2 mt-4 text-base ">
-                    <Text className='font-normal text-lg'>Forgot Your Password?</Text>
+                    <Text className='font-normal text-lg'>Already have an account?</Text>
                 </TouchableOpacity>
             </View>
         </View>

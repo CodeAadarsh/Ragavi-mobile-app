@@ -9,11 +9,11 @@ const isLoading = false;
 const SignUp = () => {
 
     return (
-        <View className="flex-1 m-6">
+        <View className="flex-1 p-6 bg-secondary">
             {/* For the Chevron Icon */}
             <TouchableOpacity className="mt-12">
                 <Image
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                     source={require('../../assets/Images/Chevron.png')}
                 />
             </TouchableOpacity>
@@ -30,15 +30,15 @@ const SignUp = () => {
                 {/* Email, Password Inputs */}
                 <TextInput
                     placeholder='Name'
-                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
                 <TextInput
                     placeholder='Email'
-                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
                 <TextInput
                     placeholder='Password'
-                    className="mt-2 h-16 w-full rounded-lg shadow-xl border border-solid border-gray-300 text-lg p-4 text-gray-400"
+                    className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
 
 
@@ -47,7 +47,7 @@ const SignUp = () => {
                     <Text className='text-2xl text-white'>SIGN UP</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text className="m-2 mt-4 text-base ">Already have an account?</Text>
+                    <Text className="m-2 mt-4 text-lg font-normal">Already have an account?</Text>
                 </TouchableOpacity>
 
             </View>
