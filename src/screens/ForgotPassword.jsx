@@ -47,7 +47,7 @@ const LoginPage = () => {
 
                 {/* Login Button */}
                 <TouchableOpacity className='mt-6 shadow-2xl justify-center items-center w-full h-14 bg-primary'>
-                    <Text className='text-2xl font-normal text-white'>Send</Text>
+                    <Text className='text-2xl font-normal text-white'>SEND</Text>
                 </TouchableOpacity>
 
 

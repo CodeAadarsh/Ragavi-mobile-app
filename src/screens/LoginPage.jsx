@@ -52,7 +52,7 @@ const LoginPage = () => {
                     <Text className='text-2xl text-white'>LOGIN</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity className="m-2 mt-4 text-base ">
+                <TouchableOpacity className="m-2 mt-4 shadow-2xl text-base ">
                     <Text className='font-normal text-lg'>Forgot Your Password?</Text>
                 </TouchableOpacity>
             </View>

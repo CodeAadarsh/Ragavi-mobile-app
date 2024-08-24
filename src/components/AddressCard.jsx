@@ -13,7 +13,7 @@ const AddressCard = ({ name, addLine1, addLine2, phone }) => {
       <TouchableOpacity
       onPress={() => setIsPressed(!isPressed)}
       >
-      <View className={`border border-solid absolute top-2 left-2  bg-white w-3 h-3 ${isPressed ?  'bg-primary' : '' }`}>
+      <View className={`border border-solid absolute top-2 left-2  bg-white w-3 h-3 ${isPressed ?  'bg-primary w-4 h-4 border-white' : '' }`}>
 
       </View>
       </TouchableOpacity>
