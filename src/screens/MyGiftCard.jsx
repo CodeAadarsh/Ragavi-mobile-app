@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const MyRewards = () => {
 
-    const headerDetails = 'My Rewards'
+    const headerDetails = 'Gift Cards'
     return (
         <>
             <View className='bg-white'>
@@ -15,10 +15,10 @@ const MyRewards = () => {
             <View className='bg-white flex-1 p-14 justify-center items-center'>
                 <View>
                     <Text className='text-lg text-gray-500 text-center'>
-                        CURRENTLY YOU HAVE NO ACTIVE REWARDS.
+                    CURRENTLY YOUR GIFT VOUCHER CODE HAS NO BALANCE,
                     </Text>
                     <Text className='text-lg text-gray-500 text-center my-3'>
-                        YOU CAN PLACE AN ORDER AND GET 5% CASHBACK ON EACH ORDER 15 DAYS AFTER THE DELIVERY IS COMPLETED.
+                    YOUR INFORMATION WILL BE UPDATED ONCE YOU MAKE A PURCHASE WITH RAGAVI.
                     </Text>
                 </View>
                 <TouchableOpacity className='mt-10 border border-solid border-primary w-32 justify-center items-center h-10'><Text className='text-lg text-primary'>SHOP NOW</Text></TouchableOpacity>

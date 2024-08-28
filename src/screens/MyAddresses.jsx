@@ -1,15 +1,15 @@
 import { View, Text, CheckBox } from 'react-native'
 import React from 'react'
-import ChevronLeft from '../../assets/SVG_Jsx/ChevronLeft'
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import AddItem from '../../assets/SVG_Jsx/AddItem'
 import AddressCard from '../components/AddressCard';
+import { useNavigation } from '@react-navigation/native';
 import HeaderComponent from '../components/HeaderComponent';
-
 
 const isLoading = false;
 const MyAddresses = () => {
-
+    
+    const navigation = useNavigation();
     if (isLoading) {
         return (
             <ActivityLoading />
@@ -53,6 +53,7 @@ const MyAddresses = () => {
         },
     ]
     const headerDetails = 'My Addresses'
+    const addressForm ='AddressForm'
     return (
 
         <ScrollView  showsVerticalScrollIndicator={false} className='flex1 bg-secondary'>
@@ -60,7 +61,7 @@ const MyAddresses = () => {
             {/* My Address Header */}
             <HeaderComponent headerDetails={headerDetails} />
 
-            <TouchableOpacity className='mb-4 p-3 flex flex-row items-center border border-solid border-gray-200'>
+            <TouchableOpacity onPress={() => navigation.navigate(addressForm )}  className='mb-4 p-3 flex flex-row items-center border border-solid border-gray-200'>
 
                 <AddItem />
                 <Text className=' text-base  bg-secondary'>Add A New Address</Text>

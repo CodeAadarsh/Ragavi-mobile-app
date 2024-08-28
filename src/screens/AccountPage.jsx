@@ -14,8 +14,10 @@ import FAQsIcon from '../../assets/SVG_Jsx/FAQsIcon'
 import ChevronRight from '../../assets/SVG_Jsx/ChevronRight'
 import HeaderComponent from '../components/HeaderComponent';
 import { useNavigation } from '@react-navigation/native';
+import EditProfile from './EditProfile';
 
 const AccountPage = ({ }) => {
+
   const navigation = useNavigation();
 
   const menuOptions = [
@@ -32,12 +34,12 @@ const AccountPage = ({ }) => {
     {
       label: 'My Gift Card',
       pagename: <GiftCardIcon/>,
-      navigation: "Error404"
+      navigation: "GiftCard"
     },
     {
       label: 'My Rewards',
       pagename: <RewardIcon/>,
-      navigation: "Error404"
+      navigation: "MyRewards"
     },
     {
       label: 'Size Chart',
@@ -81,6 +83,7 @@ const AccountPage = ({ }) => {
 
     },
   ]
+  const profile = 'EditProfile'
   const headerDetails = 'My Account'
   return (
     <>
@@ -104,7 +107,7 @@ const AccountPage = ({ }) => {
         <Text className='text-xl font-semibold p-2'>Johnny Crow Senior</Text>
 
         {/* Edit Profile  */}
-        <TouchableOpacity className='flex flex-row p-1 border-2 border-solid items-center justify-center'>
+        <TouchableOpacity onPress={() => navigation.navigate(profile)} className='flex flex-row p-1 border-2 border-solid items-center justify-center'>
           <Image
             className='h-3 w-3'
             source={require('../../assets/Images/EditProfile.png')} />
@@ -120,7 +123,7 @@ const AccountPage = ({ }) => {
               <View className="items-center justify-center pl-2">
               {items.pagename}
               </View>
-              <Text className='ml-4 text-base font-normal'>{items.label}</Text>
+              <Text className='ml-6 font-normal text-xl '>{items.label}</Text>
             </View>
             <ChevronRight/>
           </TouchableOpacity>

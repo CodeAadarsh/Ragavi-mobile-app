@@ -7,62 +7,64 @@ import HeaderComponent from '../components/HeaderComponent'
 const MyAddressForm = () => {
     const headerDetails = 'My Addresses'
     return (
-        <ScrollView className='flex-1 bg-white'>
-            {/* My Address Header */}
-             <HeaderComponent headerDetails = {headerDetails}
-            />
+        <>
+            <ScrollView className='flex-1 bg-white'>
+                {/* My Address Header */}
+                <HeaderComponent headerDetails={headerDetails}
+                />
 
-            {/* Address Form */}
+                {/* Address Form */}
 
-            {/* Name */}
-            <View className='mx-8'>
-                <Text className='text-lg m-2'>Full Name</Text>
-                <TextInput className='border border-solid h-8 w-full' />
-            </View>
-
-            {/* Phone Number */}
-            <View className='mx-8'>
-                <Text className='text-lg m-2'>Phone Number</Text>
-                <TextInput className='border border-solid h-8 w-full' />
-            </View>
-
-            {/* State + City */}
-            <View className='mx-8 my-2 flex flex-row justify-between items-center'>
-                <View>
-                    <Text className='text-lg'>State</Text>
-                    <TextInput className='border border-solid h-8 w-40' />
+                {/* Name */}
+                <View className='mx-6'>
+                    <Text className='text-lg m-2'>Full Name</Text>
+                    <TextInput className='border border-solid h-8 w-full' />
                 </View>
-                <View>
-                    <Text className='text-lg'>City</Text>
-                    <TextInput className='border border-solid h-8 w-40' />
-                </View>
-            </View>
 
-            {/* AddressLine 1 */}
-            <View className='mx-8'>
-                <Text className='text-lg m-2'>Address Line 1</Text>
-                <TextInput className='border border-solid h-8 w-full' />
-            </View>
-            {/* Address Line 2 */}
-            <View className='mx-8'>
-                <Text className='text-lg m-2'>Address Line 2</Text>
-                <TextInput className='border border-solid h-8 w-full' />
-            </View>
-
-            {/* Landmark + Pincode */}
-            <View className='mx-8 my-2 flex flex-row justify-between items-center'>
-                <View>
-                    <Text className='text-lg'>Nearby (Landmark)</Text>
-                    <TextInput className='border border-solid h-8 w-40' />
+                {/* Phone Number */}
+                <View className='mx-6'>
+                    <Text className='text-lg m-2'>Phone Number</Text>
+                    <TextInput className='border border-solid h-8 w-full' />
                 </View>
-                <View>
-                    <Text className='text-lg'>Pincode</Text>
-                    <TextInput className='border border-solid h-8 w-40' />
-                </View>
-            </View>
 
-            {/* Buttons */}
-            <View className='flex flex-row justify-around mx-8 mt-48 mb-4'>
+                {/* State + City */}
+                <View className='mx-6 my-2 flex flex-row justify-between items-center'>
+                    <View>
+                        <Text className='text-lg'>State</Text>
+                        <TextInput className='border border-solid h-8 w-40' />
+                    </View>
+                    <View>
+                        <Text className='text-lg'>City</Text>
+                        <TextInput className='border border-solid h-8 w-40' />
+                    </View>
+                </View>
+
+                {/* AddressLine 1 */}
+                <View className='mx-6'>
+                    <Text className='text-lg m-2'>Address Line 1</Text>
+                    <TextInput className='border border-solid h-8 w-full' />
+                </View>
+                {/* Address Line 2 */}
+                <View className='mx-6'>
+                    <Text className='text-lg m-2'>Address Line 2</Text>
+                    <TextInput className='border border-solid h-8 w-full' />
+                </View>
+
+                {/* Landmark + Pincode */}
+                <View className='mx-6 my-2 flex flex-row justify-between items-center'>
+                    <View>
+                        <Text className='text-lg'>Nearby (Landmark)</Text>
+                        <TextInput className='border border-solid h-8 w-40' />
+                    </View>
+                    <View>
+                        <Text className='text-lg'>Pincode</Text>
+                        <TextInput className='border border-solid h-8 w-40' />
+                    </View>
+                </View>
+
+                {/* Buttons */}
+            </ScrollView>
+            <View className='bg-white flex flex-row justify-around px-8 pb-4'>
                 <TouchableOpacity className=' border h-10 w-40 shadow-2xl border-gray-500  justify-center items-center'>
                     <Text className='text-black'>Discard</Text>
                 </TouchableOpacity>
@@ -70,7 +72,8 @@ const MyAddressForm = () => {
                     <Text className='text-white'>Apply</Text>
                 </TouchableOpacity>
             </View>
-        </ScrollView>
+        </>
+
     )
 }
 
