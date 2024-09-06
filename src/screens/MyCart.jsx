@@ -66,34 +66,34 @@ const MyCart = () => {
   const headerDetails = 'My Cart'
 
   return (
-<>
-<HeaderComponent headerDetails={headerDetails} />
-<ScrollView   showsVerticalScrollIndicator={false} >
-      {/* Header */}
+    <>
+      <HeaderComponent headerDetails={headerDetails} />
+      <ScrollView showsVerticalScrollIndicator={false} >
+        {/* Header */}
 
 
-      <View className='flex flex-row justify-between mb-2 px-8 py-4 border border-solid border-gray-200'>
-        <Text>Total Amount</Text>
-        <Text>₹ {totalPrice}</Text>
-      </View>
+        <View className='flex flex-row justify-between mb-2 px-8 py-4 border border-solid border-gray-200'>
+          <Text>Total Amount</Text>
+          <Text>₹ {totalPrice}</Text>
+        </View>
 
-      <View className='mx-2'>
-        {myCartDetails.map((items, index) => (
-          <MyCartCard
-            key={index}
-            name={items.name}
-            size={items.size}
-            quantity={items.quantity}
-            price={items.price}
-            path={items.path}
-            handleSelection={handleSelection.bind(null, index)}
-            isSelected={selectedItems.includes(index)}
-          />
-        ))}
-      </View>
-      
-    </ScrollView>
-    <View className='mt-auto mx-3 my-4 flex flex-row justify-between'>
+        <View className='mx-2'>
+          {myCartDetails.map((items, index) => (
+            <MyCartCard
+              key={index}
+              name={items.name}
+              size={items.size}
+              quantity={items.quantity}
+              price={items.price}
+              path={items.path}
+              handleSelection={handleSelection.bind(null, index)}
+              isSelected={selectedItems.includes(index)}
+            />
+          ))}
+        </View>
+
+      </ScrollView>
+      <View className='mt-auto mx-3 my-4 flex flex-row justify-between'>
         <Text className='text-lg font-normal'>Total Amount</Text>
         <Text className='text-lg'>₹ {totalPrice}</Text>
       </View>
@@ -105,7 +105,7 @@ const MyCart = () => {
         </TouchableOpacity>
       </View>
 
-</>
+    </>
 
   )
 }

@@ -14,6 +14,8 @@ import MyRewards from '../../screens/MyRewards';
 import MyOrders from '../../screens/MyOrders';
 import MyOrders1 from '../../screens/MyOrders1';
 import EditProfile from '../../screens/EditProfile';
+import ProductCard from '../../components/ProductCard';
+import Productspage from '../../screens/Productspage';
 
 const Tab = createBottomTabNavigator();
 
@@ -44,7 +46,8 @@ function MainTabBar() {
     <Tab.Screen name="Search" component={SearchPage} />
     <Tab.Screen name="WishList" component={WishList} />
     <Tab.Screen name="MyCart" component={MyCart} />
-    <Tab.Screen name="AccountPage" component={AccountpageRoutes} />
+    <Tab.Screen name="Productspage" component={Productspage} />
+    <Tab.Screen name="accountspage" component={AccountpageRoutes} />
   </Tab.Navigator>
   );
 }

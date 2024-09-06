@@ -11,12 +11,10 @@ import MyCart from '../../screens/MyCart';
 import MyOrders1 from '../../screens/MyOrders1'
 import WishList from '../../screens/WishList';
 import MyGiftCard from '../../screens/MyGiftCard'
-import Productspage from '../../screens/Productspage';
 
 const Stack = createStackNavigator();
 
-export default function AccountpageRoutes() {
-
+export default function HomepageStack() {
 
 
   return (
@@ -30,7 +28,6 @@ export default function AccountpageRoutes() {
       <Stack.Screen name='EditProfile' component={EditProfile} options={{headerShown:false}} />
       <Stack.Screen name='AddressForm' component={MyAddressForm} options={{headerShown:false}} />
       <Stack.Screen name='GiftCard' component={MyGiftCard} options={{headerShown:false}} />
-      <Stack.Screen name='Productspage' component={Productspage} options={{headerShown:false}} />
 
     </Stack.Navigator>
   );

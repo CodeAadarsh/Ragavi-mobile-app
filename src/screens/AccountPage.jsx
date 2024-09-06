@@ -44,7 +44,7 @@ const AccountPage = ({ }) => {
     {
       label: 'Size Chart',
       pagename: <SizeChartIcon/>,
-      navigation: "Error404"
+      navigation: "Productspage"
     },
     {
       label: 'Contact Us',
