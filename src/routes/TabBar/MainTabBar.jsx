@@ -46,7 +46,6 @@ function MainTabBar() {
     <Tab.Screen name="Search" component={SearchPage} />
     <Tab.Screen name="WishList" component={WishList} />
     <Tab.Screen name="MyCart" component={MyCart} />
-    <Tab.Screen name="Productspage" component={Productspage} />
     <Tab.Screen name="accountspage" component={AccountpageRoutes} />
   </Tab.Navigator>
   );

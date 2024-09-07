@@ -9,7 +9,7 @@ import ChevronRight from '../../assets/SVG_Jsx/ChevronRight'
 import IndiaSign from '../../assets/SVG_Jsx/IndiaSign'
 import HandSign from '../../assets/SVG_Jsx/HandSign'
 import DeliverySign from '../../assets/SVG_Jsx/DeliverySign'
-
+import { useNavigation, useRoute } from '@react-navigation/native';
 const isLoading = false;
 const { height } = Dimensions.get('window'); // Get the screen height
 
@@ -18,6 +18,9 @@ export type ScrollViewRef = ScrollView & {
 };
 
 const Productspage = () => {
+  const Route = useRoute();
+  console.log(Route.params)
+  const Navigation = useNavigation();
   const scrollViewRef = React.useRef<ScrollViewRef | null>(null);
   useEffect(() => {
     setTimeout(function () {
@@ -37,7 +40,9 @@ const Productspage = () => {
       return newIsPressed;
     });
   };
-
+  const handlePressBack = () =>{
+    Navigation.goBack()
+  }
   const youMayLikeData = [
     {
       discountAmount: '20%',
@@ -85,7 +90,7 @@ const Productspage = () => {
       <ScrollView ref={scrollViewRef} className='flex-1 bg-white'>
         {/* Carousel Images */}
         <View className="relative">
-          <TouchableOpacity className="top-[7.5%] left-[7.5%] z-50  absolute ">
+          <TouchableOpacity className="top-[7.5%] left-[7.5%] z-50  absolute " onPress={handlePressBack}>
 
             <ChevronLeft />
           </TouchableOpacity>
@@ -111,7 +116,7 @@ const Productspage = () => {
 
           </View>
           <View className="flex  items-end">
-            <Text className="font-semibold text-3xl">₹4,490/-</Text>
+            <Text className="font-semibold text-3xl">₹{Route.params?.productData.discountedPrice}/-</Text>
             <View className="flex-row mr-4">
               {[1, 2, 3, 4, 5].map((item, index) => (<Star key={index} />))}
               <Text className="font-normal text-gray-600  text-xs">(10)</Text>
@@ -125,7 +130,7 @@ const Productspage = () => {
             <Text className="font-bold text-xs ">SELECT SIZE</Text>
             <View className="flex-row justify-between space-x-2 flex-wrap w-[80%] ">
 
-              {["S", "M", "L", "XL", "XXL"].map((items, index) => (
+              { ["S", "M", "L", "XL", "XXL"].map((items, index) => (
                 <TouchableOpacity key={index} onPress={() => handlePress(index)} className={`w-9 h-9 justify-center items-center my-3 ${isPressed[index] ? 'bg-primary' : 'bg-[#F1F4FB]'}`}>
                   <Text className={`${isPressed[index] ? 'text-white' : 'text-black'} `}>{items}</Text>
                 </TouchableOpacity>

@@ -2,10 +2,12 @@ import { View, Text, Image } from 'react-native';
 import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Xcross from '../../assets/SVG_Jsx/Xcross';
-
+import { useNavigation,useRoute } from '@react-navigation/native';
 const ProductCard = ({ discountAmount, itemName, mrp, discountedPrice, path, selectType,fromWhere }) => {
+  const navigation = useNavigation();
+ 
   return (
-    <TouchableOpacity className="m-1 w-48 shadow-2xl">
+    <TouchableOpacity className="m-1 w-48 " onPress={()=>navigation.navigate("Productspage", {productData:{image:path,discountedPrice}})}>
       {fromWhere === "wish" && <TouchableOpacity className="absolute bottom-80 right-4 rounded-full bg-white ">
         <Xcross className="h-6 w-6  "/>
       </TouchableOpacity>}

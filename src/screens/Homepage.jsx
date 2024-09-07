@@ -180,7 +180,7 @@ const Homepage = () => {
             </TouchableOpacity>
           </StyledView>
 
-          <View className='flex flex-wrap flex-row items-center justify-center p-2'>
+          <View className='flex flex-row items-center justify-center p-2'>
             <TouchableOpacity>
               <Image className='mx-2' source={require('../../assets/Images/Homepageimg9.png')} />
             </TouchableOpacity>
