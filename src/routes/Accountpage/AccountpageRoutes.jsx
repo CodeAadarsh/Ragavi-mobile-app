@@ -12,6 +12,9 @@ import MyOrders1 from '../../screens/MyOrders1'
 import WishList from '../../screens/WishList';
 import MyGiftCard from '../../screens/MyGiftCard'
 import Productspage from '../../screens/Productspage';
+import PrivacyPolicy from '../../screens/PrivacyPolicy';
+import ShippingPolicy from '../../screens/ShippingPolicy';
+import FAQs from '../../screens/FAQs';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +34,9 @@ export default function AccountpageRoutes() {
       <Stack.Screen name='AddressForm' component={MyAddressForm} options={{headerShown:false}} />
       <Stack.Screen name='GiftCard' component={MyGiftCard} options={{headerShown:false}} />
       <Stack.Screen name='Productspage' component={Productspage} options={{headerShown:false}} />
+      <Stack.Screen name='PrivacyPolicy' component={PrivacyPolicy} options={{headerShown:false}} />
+      <Stack.Screen name='ShippingPolicy' component={ShippingPolicy} options={{headerShown:false}} />
+      <Stack.Screen name='FAQs' component={FAQs} options={{headerShown:false}} />
 
     </Stack.Navigator>
   );

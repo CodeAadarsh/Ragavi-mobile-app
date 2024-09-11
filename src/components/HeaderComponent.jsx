@@ -7,7 +7,7 @@ const HeaderComponent = ( { headerDetails} ) => {
   const navigation = useNavigation();
   return (
     <View>
-       <TouchableOpacity onPress={()=>navigation.goBack()} className='px-8 py-4 flex items-center flex-row pt-16'>
+       <TouchableOpacity onPress={()=>navigation.goBack()} className='bg-white px-8 py-4 flex items-center flex-row pt-16'>
                 <View className=''>
                     <ChevronLeft />
                 </View>

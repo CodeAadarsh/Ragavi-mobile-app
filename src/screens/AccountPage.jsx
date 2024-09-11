@@ -61,13 +61,13 @@ const AccountPage = ({ }) => {
     {
       label: 'Privacy Policy',
       pagename: <PrivacyPolicyIcon/>,
-      navigation: "Error404"
+      navigation: "PrivacyPolicy"
 
     },
     {
       label: 'Shipping Policy',
       pagename: <ShippingPolicyIcon/>,
-      navigation: "Error404"
+      navigation: "ShippingPolicy"
 
     },
     {
@@ -79,7 +79,7 @@ const AccountPage = ({ }) => {
     {
       label: 'FAQs',
       pagename: <FAQsIcon/>,
-      navigation: "Error404"
+      navigation: "FAQs"
 
     },
   ]

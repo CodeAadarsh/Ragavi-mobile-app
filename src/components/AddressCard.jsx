@@ -1,10 +1,12 @@
 import { View, Text, Touchable } from 'react-native'
 import React, { useState } from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native';
 
 const AddressCard = ({ name, addLine1, addLine2, phone }) => {
-
+  const navigation = useNavigation();
   const [isPressed, setIsPressed] = useState(false)
+
   return (
 
     <View className='bg-white shadow-2xl  m-2'>
@@ -21,7 +23,7 @@ const AddressCard = ({ name, addLine1, addLine2, phone }) => {
         <View className='flex flex-row justify-between'>
           <Text className='text-xl'>{name} </Text>
           <TouchableOpacity >
-            <Text className='text-base font-light underline'>Edit</Text>
+            <Text className='text-base font-light underline' onPress={()=>navigation.navigate("MyAddressForm")}>Edit</Text>
           </TouchableOpacity>
         </View>
 
