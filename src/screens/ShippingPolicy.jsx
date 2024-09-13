@@ -59,10 +59,10 @@ const ShippingPolicy = () => {
                 <Text className='text-4xl text-primary'>
                     Shipping Policy
                 </Text>
-                <Text className='font-light text-xl py-2'>
+                <Text className='font-light text-xl py-2 text-justify '>
                     We strive to provide a seamless and hassle-free shopping experience at Ragavi. Our policies and terms of use are designed to ensure a smooth purchase process. We kindly request you to review these policies carefully before making a purchase
                 </Text>
-                <Text className='font-light text-xl'>
+                <Text className='font-light text-xl text-justify'>
                     We strive to provide a seamless and hassle-free shopping experience at Ragavi. Our policies and terms of use are designed to ensure a smooth purchase process. We kindly request you to review these policies carefully before making a purchase
                 </Text>
                 <Text className='font-light text-2xl py-3'>

@@ -20,7 +20,7 @@ const Error404 = () => {
         strokeLinejoin="round"
         className="text-primary"
       >
-        <Path d="M9 12v-1a4 4 0 1 1 8 0v1"></Path>
+        <Path d="M8 13v-1a4 4 0 1 1 8 0v1"></Path>
         <Path d="M5 12v-1a7 7 0 1 1 14 0v1"></Path>
         <Path d="M12 17v.01"></Path>
         <Path d="M12 21v.01"></Path>
@@ -35,9 +35,9 @@ const Error404 = () => {
       {/* Go to Home Button */}
       <TouchableOpacity
         className="mt-6 bg-primary py-3 px-6 rounded-lg"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.goBack()}
       >
-        <Text className="text-white font-semibold">Go to Home</Text>
+        <Text className="text-white font-semibold">Go back</Text>
       </TouchableOpacity>
     </View>
   );

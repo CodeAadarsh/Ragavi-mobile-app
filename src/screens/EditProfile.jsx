@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView, TouchableOpacity,KeyboardAvoidingView } from 'react-native';
 import React, { useState } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import { TextInput } from 'react-native-gesture-handler';
@@ -33,7 +33,10 @@ const EditProfile = () => {
           </View>
           <View className="border border-gray-200 mt-5"></View>
         </View>
+
         <ScrollView className="flex-1 p-5">
+        <KeyboardAvoidingView>
+
           {/* Profile Images */}
           <View className="flex flex-row">
             <View className="">
@@ -85,7 +88,10 @@ const EditProfile = () => {
               </View>
             </View>
           </View>
+        </KeyboardAvoidingView>
+
         </ScrollView>
+        
         <View className="flex flex-row justify-between mt-5 p-5 ">
           <TouchableOpacity onPress={handleDiscard} className="border border-solid w-40 h-9 justify-center items-center">
             <Text className="text-black font-normal text-lg">Discard</Text>
