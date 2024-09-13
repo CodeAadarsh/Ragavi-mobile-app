@@ -23,10 +23,10 @@ const ContactUs = () => {
     return (
         <>
          <HeaderComponent headerDetails={headerDetails} />
-         <View className='flex-1'>
+         <View className='flex-1 bg-white'>
             {/* Header */}
            
-            <View className='px-6'>
+            <View className='px-6 '>
                 {/* reach out on */}
                 <View className='flex flex-row gap-3 mb-10'>
                     <ShortLogo />

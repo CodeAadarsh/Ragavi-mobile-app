@@ -63,7 +63,7 @@ const MyOrders = () => {
     <>
      <HeaderComponent headerDetails={headerDetails} />
      
-     <View className='flex flex-row items-center  justify-evenly pb-4'>
+     <View className='flex flex-row items-center  justify-evenly p-4'>
        <TouchableOpacity className='bg-primary w-40 h-8 shadow-2xl flex justify-center items-center'>
          <Text className='text-white font-normal text-sm'>Delivered</Text>
        </TouchableOpacity>

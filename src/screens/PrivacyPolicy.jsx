@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
         <>
             <HeaderComponent />
 
-            <ScrollView className='p-3 '>
+            <ScrollView className='p-3 bg-white'>
                 <View className=''>
                     {/* Header */}
                     <Text className='text-4xl text-primary font-normal pb-3'>

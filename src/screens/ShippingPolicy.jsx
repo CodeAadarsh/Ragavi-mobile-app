@@ -55,7 +55,7 @@ const ShippingPolicy = () => {
             <View>
                 <HeaderComponent />
             </View>
-            <ScrollView className='p-3'>
+            <ScrollView className='p-3 bg-white'>
                 <Text className='text-4xl text-primary'>
                     Shipping Policy
                 </Text>

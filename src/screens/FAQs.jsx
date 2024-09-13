@@ -311,9 +311,9 @@ const FAQs = () => {
 
                 <View className='gap-4 p-5'>
                     {selectedType === "All" ? (
-                        faqData.map((items) => (
+                        faqData.map((items, index) => (
                             <FAQCard
-                            key={items.key}
+                            key={index}
                             title={items.title}
                             details={items.details}
                             type={items.type} 
@@ -322,9 +322,9 @@ const FAQs = () => {
                     ) : (
                         faqData
                         .filter((items) => items.type === selectedType)
-                        .map((items) => (
+                        .map((items, index) => (
                             <FAQCard 
-                            key={items.key}
+                            key={index}
                             title={items.title}
                             details={items.details}
                             type={items.type}

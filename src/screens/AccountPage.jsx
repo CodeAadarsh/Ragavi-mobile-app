@@ -90,7 +90,7 @@ const AccountPage = ({ }) => {
        <TouchableOpacity>
         <HeaderComponent headerDetails={headerDetails}/>
       </TouchableOpacity>
-      <ScrollView  showsVerticalScrollIndicator={false} className='flex-1 '>
+      <ScrollView  showsVerticalScrollIndicator={false} className='flex-1 bg-white'>
       {/* Chevron + Header */}
    
       {/* Profile Image+ Name + Edit Option */}
