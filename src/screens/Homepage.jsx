@@ -139,7 +139,7 @@ const Homepage = () => {
           <StyledText className="text-3xl">
             New Arrivals
           </StyledText>
-          <StyledTouchableOpacity>
+          <StyledTouchableOpacity onPress={() => Navigation.navigate('SeeAll')}>
             <StyledText className="text-lg font-normal">
               See All
             </StyledText>
@@ -173,7 +173,7 @@ const Homepage = () => {
             <Text className='text-3xl'>
               Excusive For You
             </Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Navigation.navigate('SeeAll')}>
               <Text className='text-lg font-normal'>
                 See All
               </Text>

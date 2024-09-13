@@ -15,6 +15,7 @@ import WishList from '../screens/WishList';
 import MyCart from '../screens/MyCart';
 import ContactUs from '../screens/ContactUs';
 import MainTabBar from './TabBar/MainTabBar';
+import SeeAll from '../screens/SeeAll';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,7 @@ export default function HomeStack() {
       <Stack.Screen name="MainTab" component={MainTabBar} options={{headerShown:false}} />
       <Stack.Screen name="Productspage" component={Productspage} options={{headerShown:false}} />
       <Stack.Screen name="MyAddressForm" component={MyAddressForm} options={{headerShown:false}} />
+      <Stack.Screen name="SeeAll" component={SeeAll} options={{headerShown:false}} />
 
       {/* <Stack.Screen name="Profile" component={Profile} /> */}
       {/* <Stack.Screen name="Settings" component={Settings} /> */}

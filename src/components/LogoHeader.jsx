@@ -6,7 +6,7 @@ import ShoppingBag from '../../assets/SVG_Jsx/ShoppingBag'
 
 const LogoHeader = () => {
   return (
-    <View className='m-4 mt-12 flex flex-row justify-between'>
+    <View className='p-4 pt-12 flex bg-white flex-row justify-between'>
       <TouchableOpacity>
         <Logo />
       </TouchableOpacity>

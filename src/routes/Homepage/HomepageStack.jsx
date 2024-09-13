@@ -11,6 +11,7 @@ import MyCart from '../../screens/MyCart';
 import MyOrders1 from '../../screens/MyOrders1'
 import WishList from '../../screens/WishList';
 import MyGiftCard from '../../screens/MyGiftCard'
+import SeeAll from '../../screens/SeeAll';
 
 const Stack = createStackNavigator();
 

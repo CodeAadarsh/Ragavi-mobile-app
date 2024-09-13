@@ -5,13 +5,9 @@ import ProductCard from '../components/ProductCard'
 import { ScrollView } from 'react-native-gesture-handler'
 import AddToBag from '../../assets/SVG_Jsx/AddToBag'
 import { styled } from 'nativewind'
-
-
-const WishList = () => {
-    const StyledView = styled(View);
-    const StyledText = styled(Text);
-    const StyledTouchableOpacity = styled(TouchableOpacity);
-    
+import FilterComponent from '../components/FilterComponent'
+import LogoHeader from '../components/LogoHeader'
+const SeeAll = () => {
     const cardDetails = [
         {
             discountAmount: '20%',
@@ -71,45 +67,40 @@ const WishList = () => {
 
 
     ]
-
-    const headerDetails = 'WishList'
-    
+    const headerDetails = ''
     return (
         <>
-            <HeaderComponent
-                headerDetails={headerDetails}
-            />
-            <View className='border border-solid border-gray-300 px-8 py-4 '>
-                <Text className='text-lg '>{cardDetails.length} Results</Text>
-            </View>
-            <ScrollView showsVerticalScrollIndicator={false} className='flex'>
+            {/* <View className='bg-white'> */}
+                <LogoHeader
+                // headerDetails={headerDetails}
+                />
+                <FilterComponent />
+                <ScrollView showsVerticalScrollIndicator={false} className='flex bg-white'>
 
-                {/* Header */}
 
-                {/* Number of results */}
 
-                {/* Cards */}
-                <View className='flex flex-row flex-wrap justify-between '>
-                    {cardDetails.map((items, index) => (
-                        <View
-                            key={index}
-                            className=" w-1/2 items-center justify-center">
-                            <ProductCard
-                                discountAmount={items.discountAmount}
-                                itemName={items.itemName}
-                                mrp={items.mrp}
-                                discountedPrice={items.discountedPrice}
-                                path={items.image}
-                                selectType={items.selectType}
-                                fromWhere="wish"
-                            />
-                        </View>
-                    ))}
-                </View>
-            </ScrollView>
+                    <View className='flex flex-row flex-wrap justify-between '>
+                        {cardDetails.map((items, index) => (
+                            <View
+                                key={index}
+                                className=" w-1/2 items-center justify-center">
+                                <ProductCard
+                                    discountAmount={items.discountAmount}
+                                    itemName={items.itemName}
+                                    mrp={items.mrp}
+                                    discountedPrice={items.discountedPrice}
+                                    path={items.image}
+                                    selectType={items.selectType}
+                                // fromWhere="wish"
+                                />
+                            </View>
+                        ))}
+                    </View>
+                </ScrollView>
+            {/* </View> */}
+
         </>
-
     )
 }
 
-export default WishList
+export default SeeAll
