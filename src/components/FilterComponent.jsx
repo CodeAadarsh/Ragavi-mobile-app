@@ -10,11 +10,11 @@ const FilterComponent = () => {
             <View className='flex flex-row justify-around'>
                 <TouchableOpacity className='flex flex-row gap-x-2'>
                     <FilterIcon />
-                    <Text className='text-lg font-light'>Filters</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-light'>Filters</Text>
                 </TouchableOpacity>
                 <TouchableOpacity className='flex flex-row gap-2'>
                     <SwapIcon />
-                    <Text className='text-lg font-light'>Price: low to high</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-light'>Price: low to high</Text>
                     <ChevronDown />
                 </TouchableOpacity>
             </View>

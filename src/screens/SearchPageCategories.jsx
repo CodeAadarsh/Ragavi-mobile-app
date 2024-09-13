@@ -27,7 +27,7 @@ const SearchPageCategories = () => {
       {/* Input */}
       <View className='p-1 mx-5 mt-10 flex-row items-center bg-gray-200 rounded'>
         <SearchIcon/>
-        <TextInput
+        <TextInput style={{ fontFamily: 'Frutiger' }}
           placeholder='What do you looking for?'
           className='bg-gray-200 h-12 flex-1 px-4'
         />
@@ -37,7 +37,7 @@ const SearchPageCategories = () => {
       <ScrollView className='mt-10'>
         {categories.map((category, index) => (
           <TouchableOpacity key={index} className='py-2 border-b border-t border-gray-300'>
-            <Text className='text-lg mx-5'>{category}</Text>
+            <Text style={{ fontFamily: 'Frutiger' }} className='text-lg mx-5'>{category}</Text>
           </TouchableOpacity>
         ))}
       </ScrollView>

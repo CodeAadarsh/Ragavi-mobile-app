@@ -23,20 +23,20 @@ const SignUp = () => {
             <View className="m-4 mt-4">
 
                 {/* Login Heading */}
-                <Text className=" text-5xl my-10">
+                <Text style={{ fontFamily: 'Frutiger' }} className=" text-5xl my-10">
                     Sign Up
                 </Text>
 
                 {/* Email, Password Inputs */}
-                <TextInput
+                <TextInput style={{ fontFamily: 'Frutiger' }}
                     placeholder='Name'
                     className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
-                <TextInput
+                <TextInput style={{ fontFamily: 'Frutiger' }}
                     placeholder='Email'
                     className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
-                <TextInput
+                <TextInput style={{ fontFamily: 'Frutiger' }}
                     placeholder='Password'
                     className="my-2 h-16 w-full shadow-2xl bg-white text-lg p-4 text-gray-400"
                 />
@@ -44,10 +44,10 @@ const SignUp = () => {
 
                 {/* Login Button */}
                 <TouchableOpacity className='mt-6 shadow-xl justify-center items-center w-full h-14 bg-primary'>
-                    <Text className='text-2xl text-white'>SIGN UP</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-2xl text-white'>SIGN UP</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text className="m-2 mt-4 text-lg font-normal">Already have an account?</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className="m-2 mt-4 text-lg font-normal">Already have an account?</Text>
                 </TouchableOpacity>
 
             </View>

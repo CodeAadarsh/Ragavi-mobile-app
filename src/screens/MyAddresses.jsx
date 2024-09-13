@@ -64,7 +64,7 @@ const MyAddresses = () => {
             <TouchableOpacity onPress={() => navigation.navigate(addressForm )}  className='bg-white mb-4 p-3 flex flex-row items-center border border-solid border-gray-200'>
 
                 <AddItem />
-                <Text className=' text-base  bg-secondary'>Add A New Address</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className=' text-base  bg-secondary'>Add A New Address</Text>
             </TouchableOpacity>
             
             {/* Addresses */}

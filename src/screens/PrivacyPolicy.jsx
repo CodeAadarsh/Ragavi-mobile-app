@@ -23,34 +23,34 @@ const PrivacyPolicy = () => {
             <ScrollView className='p-3 bg-white'>
                 <View className=''>
                     {/* Header */}
-                    <Text className='text-4xl text-primary font-normal pb-3'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-4xl text-primary font-normal pb-3'>
                         Privacy Policy
                     </Text>
-                    <Text className='font-light text-xl py-2 text-justify'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl py-2 text-justify'>
                         This Privacy Policy governs how Ragavi (Raj Ethnic Apparels Pvt. Ltd.) collects, uses, maintains, and discloses information gathered from users (each, a "User") of the www.ragavi.in website (“Site"). This Privacy Policy applies to the Site and all the products and services offered by
                         Ragavi.
                     </Text>
 
-                    <Text className='font-light text-xl text-justify'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl text-justify'>
                         Ragavi (Raj Ethnic Apparels Pvt. Ltd.), accessible from www.ragavi.in, keeps the privacy of its visitors as one of our main priorities. This Privacy Policy applies to our online activities only and is valid for visitors to our website with regards to the information that they share on and/or collect from Ragavi. This policy does not apply to any information collected online or via channels other than this website.
                     </Text>
-                    <Text className='font-light text-2xl mt-4'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl mt-4'>
                         Consent
                     </Text>
-                    <Text className='font-light text-xl mb-4 text-justify'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl mb-4 text-justify'>
                         By using our website (www.ragavi.in) you hereby consent to our Privacy Policy and agree to its terms.
                     </Text>
 
-                    <Text className='font-light text-2xl'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl'>
                         Information We Collect
                     </Text>
-                    <Text className='font-light text-xl text-justify'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl text-justify'>
                         We may collect personal identification information from Users in a variety of ways when users visit our site, register on the site, subscribe to the newsletter, and in connection with other activities that we make available on our site.
                     </Text>
-                    <Text className='font-light text-xl text-justify'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl text-justify'>
                         When you register for an account on our website, we may ask for your contact information such as name, company name, address, email address, date of birth, and telephone number.
                     </Text>
-                    <Text className='font-light text-2xl  my-4'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl  my-4'>
                         Usage of your Personal Identification Information:
                     </Text>
                     <View>
@@ -62,31 +62,31 @@ const PrivacyPolicy = () => {
                         ))}
                     </View>
 
-                    <Text className='text-xl font-normal pt-4'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal pt-4'>
                         Changes to this Privacy Policy
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         Ragavi (Raj Ethnic Apparels Pvt. Ltd.) has the discretion to update this Privacy Policy at any time. Whenever we do, we revise the updated date at the bottom of this page, always.
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect.
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         To acknowledge and agree on the changes is your responsibility and so is to review this Privacy Policy periodically and become aware of any modifications.
                     </Text>
-                    <Text className='text-xl font-normal pt-4'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal pt-4'>
                         Cookies
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         Like any other website, www.ragavi.in uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accesses or visits.
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         The information is used to optimize the users' experience by customizing our web page content based on your browser type and/or other information.
                     </Text>
-                    <Text className='text-xl font-normal pt-4'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal pt-4'>
                         Contact Us
                     </Text>
-                    <Text className='text-xl font-normal text-justify '>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-normal text-justify '>
                         If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at care@ragavi.in.
                     </Text>
 

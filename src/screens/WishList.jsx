@@ -80,7 +80,7 @@ const WishList = () => {
                 headerDetails={headerDetails}
             />
             <View className='border border-solid border-gray-300 px-8 py-4 '>
-                <Text className='text-lg '>{cardDetails.length} Results</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className='text-lg '>{cardDetails.length} Results</Text>
             </View>
             <ScrollView showsVerticalScrollIndicator={false} className='flex'>
 

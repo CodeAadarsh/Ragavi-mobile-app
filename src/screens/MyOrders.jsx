@@ -65,10 +65,10 @@ const MyOrders = () => {
      
      <View className='flex flex-row items-center  justify-evenly p-4'>
        <TouchableOpacity className='bg-primary w-40 h-8 shadow-2xl flex justify-center items-center'>
-         <Text className='text-white font-normal text-sm'>Delivered</Text>
+         <Text style={{ fontFamily: 'Frutiger' }} className='text-white font-normal text-sm'>Delivered</Text>
        </TouchableOpacity>
        <TouchableOpacity className='w-40 h-8 shadow-2xl flex justify-center items-center'>
-         <Text className='text-sm font-normal'>Processing</Text>
+         <Text style={{ fontFamily: 'Frutiger' }} className='text-sm font-normal'>Processing</Text>
        </TouchableOpacity>
      </View>
      <ScrollView  showsVerticalScrollIndicator={false} className='flex-1'>

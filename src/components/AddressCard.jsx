@@ -21,19 +21,19 @@ const AddressCard = ({ name, addLine1, addLine2, phone }) => {
       </TouchableOpacity>
       <View className='py-4 px-10'>
         <View className='flex flex-row justify-between'>
-          <Text className='text-xl'>{name} </Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className='text-xl'>{name} </Text>
           <TouchableOpacity >
-            <Text className='text-base font-light underline' onPress={()=>navigation.navigate("MyAddressForm")}>Edit</Text>
+            <Text style={{ fontFamily: 'Frutiger' }} className='text-base font-light underline' onPress={()=>navigation.navigate("MyAddressForm")}>Edit</Text>
           </TouchableOpacity>
         </View>
 
-        <Text className='text-lg font-normal'>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal'>
           {addLine1}
         </Text>
-        <Text className='text-lg font-normal mb-2'>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal mb-2'>
           {addLine2}
         </Text>
-        <Text className='text-base font-normal'>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-base font-normal'>
           {phone}
         </Text>
         

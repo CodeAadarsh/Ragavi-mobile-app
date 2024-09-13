@@ -11,7 +11,7 @@ const HeaderComponent = ( { headerDetails} ) => {
                 <View className=''>
                     <ChevronLeft />
                 </View>
-                <Text className='text-2xl mx-4'>{headerDetails}</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className='text-2xl mx-4'>{headerDetails}</Text>
             </TouchableOpacity>
     </View>
   )

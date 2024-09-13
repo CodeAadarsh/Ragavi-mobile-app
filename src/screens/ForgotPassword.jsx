@@ -30,16 +30,16 @@ const LoginPage = () => {
             <View className="m-4 mt-16">
 
                 {/* Login Heading */}
-                <Text className=" text-5xl">
+                <Text style={{ fontFamily: 'Frutiger' }} className=" text-5xl">
                     Forgot Password
                 </Text>
 
                 {/* Email, Password Inputs */}
                 <View className='mt-10'>
-                <Text className='font-normal text-base'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-normal text-base'>
                 Please, enter your email address. You will receive a link to create a new password via email.
                 </Text>
-                    <TextInput
+                    <TextInput style={{ fontFamily: 'Frutiger' }}
                         placeholder='Email'
                         className="h-16 my-2 w-full shadow-xl  text-lg p-4 bg-white text-gray-400"
                     />
@@ -47,7 +47,7 @@ const LoginPage = () => {
 
                 {/* Login Button */}
                 <TouchableOpacity className='mt-6 shadow-2xl justify-center items-center w-full h-14 bg-primary'>
-                    <Text className='text-2xl font-normal text-white'>SEND</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-2xl font-normal text-white'>SEND</Text>
                 </TouchableOpacity>
 
 

@@ -5,11 +5,12 @@ import LogoHeader from '../components/LogoHeader';
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import ProductCard from '../components/ProductCard';
 import AddToWish from '../../assets/SVG_Jsx/AddToWish'
+import { useNavigation } from '@react-navigation/native';
 
 const isLoading = false;
 
-
 const SearchPage = () => {
+    const navigation = useNavigation();
     const cardDetails = [
         {
             discountAmount: '20%',
@@ -70,59 +71,63 @@ const SearchPage = () => {
 
         },
     ]
-
+  
     return (
-        <ScrollView className='flex-1 bg-white'>
+        <>
+                <LogoHeader backbutton={true} />
+                <ScrollView className='flex-1 bg-white'>
 
-            <View className=' mt-5'>
-                {/* Header */}
-                <View className='px-4'>
-                    <LogoHeader />
+<View className=' '>
+    {/* Header */}
 
-                    {/* Input */}
+    <View className='px-4'>
 
-
-                    <View className=' border mt-5 flex-row items-center bg-gray-200 rounded'>
-                        <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
-                        <TextInput
-                            placeholder='What do you looking for?'
-                            className='bg-gray-200 h-12 flex-1 px-4'
-                        />
-                    </View>
-
-                    {/* Heading 2 */}
-                    <View className='flex flex-row justify-between my-8'>
-                        <Text className='text-3xl'>Search Results</Text>
-                        <TouchableOpacity>
-                            <Text className='text-lg'>See All</Text>
-                        </TouchableOpacity>
-                    </View>
+        {/* Input */}
 
 
-                </View>
+        <View className='  mt-5 flex-row items-center bg-gray-200 rounded'>
+            <Image className='h-6 w-6 ml-4' source={require('../../assets/Images/Search.png')} />
+            <TextInput onChangeText={(e)=>console.log(e)} style={{ fontFamily: 'Frutiger' }}
+                placeholder='What do you looking for?'
+                className='bg-gray-200 text-black h-12 flex-1 px-4'
+            />
+        </View>
 
-                {/* Cards */}
-                <View
-                    className='flex flex-row flex-wrap justify-center items-center' >
-                    {/* Cards */}
-                    {cardDetails.map((items, index) => (
-                        <View   key={index} className="w-1/2 items-center ">
+        {/* Heading 2 */}
+        <View className='flex flex-row justify-between my-8'>
+            <Text style={{ fontFamily: 'Frutiger' }} className='text-3xl'>Search Results</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate("SeeAll")}>
+                <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>See All</Text>
+            </TouchableOpacity>
+        </View>
 
-                        <ProductCard
-                          
-                            discountAmount={items.discountAmount}
-                            itemName={items.itemName}
-                            mrp={items.mrp}
-                            discountedPrice={items.discountedPrice}
-                            path={items.image}
-                            selectType={items.selectType}
-                        />
-                        </View>
 
-                    ))}
-                </View>
+    </View>
+
+    {/* Cards */}
+    <View
+        className='flex flex-row flex-wrap justify-center items-center' >
+        {/* Cards */}
+        {cardDetails.map((items, index) => (
+            <View   key={index} className="w-1/2 items-center ">
+
+            <ProductCard
+              
+                discountAmount={items.discountAmount}
+                itemName={items.itemName}
+                mrp={items.mrp}
+                discountedPrice={items.discountedPrice}
+                path={items.image}
+                selectType={items.selectType}
+            />
             </View>
-        </ScrollView>
+
+        ))}
+    </View>
+</View>
+</ScrollView>
+        </>
+       
     )
 }
 

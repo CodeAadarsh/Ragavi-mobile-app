@@ -56,16 +56,16 @@ const ShippingPolicy = () => {
                 <HeaderComponent />
             </View>
             <ScrollView className='p-3 bg-white'>
-                <Text className='text-4xl text-primary'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='text-4xl text-primary'>
                     Shipping Policy
                 </Text>
-                <Text className='font-light text-xl py-2 text-justify '>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl py-2 text-justify '>
                     We strive to provide a seamless and hassle-free shopping experience at Ragavi. Our policies and terms of use are designed to ensure a smooth purchase process. We kindly request you to review these policies carefully before making a purchase
                 </Text>
-                <Text className='font-light text-xl text-justify'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-xl text-justify'>
                     We strive to provide a seamless and hassle-free shopping experience at Ragavi. Our policies and terms of use are designed to ensure a smooth purchase process. We kindly request you to review these policies carefully before making a purchase
                 </Text>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                     Shipping Charges for Delivery in India:
                 </Text>
                 <View>
@@ -78,7 +78,7 @@ const ShippingPolicy = () => {
                 </View>
 
 
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                     Shipping Charges for Delivery Outside India:
                 </Text>
                 <View>
@@ -91,7 +91,7 @@ const ShippingPolicy = () => {
                 </View>
 
 
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                     Order Dispatch and Delivery:
                 </Text>
                 <View>
@@ -102,7 +102,7 @@ const ShippingPolicy = () => {
                         />
                     ))}
                 </View>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                     Payment Options:
                 </Text>
                 <View>
@@ -113,7 +113,7 @@ const ShippingPolicy = () => {
                         />
                     ))}
                 </View>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                 Receiving Order Guidelines:
                 </Text>
                 <View>
@@ -124,7 +124,7 @@ const ShippingPolicy = () => {
                         />
                     ))}
                 </View>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                 Self-Collection:
                 </Text>
                 <View>
@@ -135,7 +135,7 @@ const ShippingPolicy = () => {
                         />
                     ))}
                 </View>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                 Cancellation by the Team:
                 </Text>
                 <View>
@@ -146,7 +146,7 @@ const ShippingPolicy = () => {
                         />
                     ))}
                 </View>
-                <Text className='font-light text-2xl py-3'>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-light text-2xl py-3'>
                 Credit Note Usage:
                 </Text>
                 <View>

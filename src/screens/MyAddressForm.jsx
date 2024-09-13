@@ -17,48 +17,48 @@ const MyAddressForm = () => {
 
                 {/* Name */}
                 <View className='mx-6'>
-                    <Text className='text-lg m-2'>Full Name</Text>
-                    <TextInput className='border border-solid h-8 w-full' />
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg m-2'>Full Name</Text>
+                    <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-full' />
                 </View>
 
                 {/* Phone Number */}
                 <View className='mx-6'>
-                    <Text className='text-lg m-2'>Phone Number</Text>
-                    <TextInput className='border border-solid h-8 w-full' />
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg m-2'>Phone Number</Text>
+                    <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-full' />
                 </View>
 
                 {/* State + City */}
                 <View className='mx-6 my-2 flex flex-row justify-between items-center'>
                     <View>
-                        <Text className='text-lg'>State</Text>
-                        <TextInput className='border border-solid h-8 w-40' />
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>State</Text>
+                        <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-40' />
                     </View>
                     <View>
-                        <Text className='text-lg'>City</Text>
-                        <TextInput className='border border-solid h-8 w-40' />
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>City</Text>
+                        <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-40' />
                     </View>
                 </View>
 
                 {/* AddressLine 1 */}
                 <View className='mx-6'>
-                    <Text className='text-lg m-2'>Address Line 1</Text>
-                    <TextInput className='border border-solid h-8 w-full' />
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg m-2'>Address Line 1</Text>
+                    <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-full' />
                 </View>
                 {/* Address Line 2 */}
                 <View className='mx-6'>
-                    <Text className='text-lg m-2'>Address Line 2</Text>
-                    <TextInput className='border border-solid h-8 w-full' />
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg m-2'>Address Line 2</Text>
+                    <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-full' />
                 </View>
 
                 {/* Landmark + Pincode */}
                 <View className='mx-6 my-2 flex flex-row justify-between items-center'>
                     <View>
-                        <Text className='text-lg'>Nearby (Landmark)</Text>
-                        <TextInput className='border border-solid h-8 w-40' />
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>Nearby (Landmark)</Text>
+                        <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-40' />
                     </View>
                     <View>
-                        <Text className='text-lg'>Pincode</Text>
-                        <TextInput className='border border-solid h-8 w-40' />
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>Pincode</Text>
+                        <TextInput style={{ fontFamily: 'Frutiger' }} className='border border-solid h-8 w-40' />
                     </View>
                 </View>
 
@@ -66,10 +66,10 @@ const MyAddressForm = () => {
             </ScrollView>
             <View className='bg-white flex flex-row justify-around px-8 pb-4'>
                 <TouchableOpacity className=' border h-10 w-40 shadow-2xl border-gray-500  justify-center items-center'>
-                    <Text className='text-black'>Discard</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-black'>Discard</Text>
                 </TouchableOpacity>
                 <TouchableOpacity className=' bg-primary h-10 shadow-2xl w-40 justify-center items-center '>
-                    <Text className='text-white'>Apply</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-white'>Apply</Text>
                 </TouchableOpacity>
             </View>
         </>

@@ -71,7 +71,7 @@ const SeeAll = () => {
     return (
         <>
             {/* <View className='bg-white'> */}
-                <LogoHeader
+                <LogoHeader backbutton={true}
                 // headerDetails={headerDetails}
                 />
                 <FilterComponent />

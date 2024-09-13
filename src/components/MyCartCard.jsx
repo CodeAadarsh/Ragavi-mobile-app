@@ -20,9 +20,9 @@ const MyCartCard = ({ name, size, quantity, price, path, handleSelection, isSele
         </View>
         <Image className={`h-28 w-20 m-2 object-contain  ${isPressed ? 'opacity-100' : 'opacity-60'}`} source={path} />
         <View className='my-3'>
-          <Text className='text-lg font-semibold'>{name}</Text>
-          <Text className='font-normal'>Size: {size} | QTY : {quantity} </Text>
-          <Text className=' mt-6 text-base'> Price :  ₹ {price}</Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-semibold'>{name}</Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className='font-normal'>Size: {size} | QTY : {quantity} </Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className=' mt-6 text-base'> Price :  ₹ {price}</Text>
         </View>
       </View>
     </TouchableOpacity>

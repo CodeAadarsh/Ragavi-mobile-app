@@ -295,7 +295,7 @@ const FAQs = () => {
                 <HeaderComponent headerDetails={headerDetails} />
             </View>
             <ScrollView className=' bg-white'>
-                <Text className='py-4 text-center text-3xl text-primary'>FAQ's</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className='py-4 text-center text-3xl text-primary'>FAQ's</Text>
 
                 <View className='flex flex-row flex-wrap justify-center my-4 text-center'>
                     {["About_Ragavi", "About_Our_Product", "Shopping", "Shipping", "Billing_and_Payment", "Customer_Service", "Return_&_Exchange", "Garment_Care", "Sizes", "Contact_Us", "Gifts"].map((type) => (
@@ -304,7 +304,7 @@ const FAQs = () => {
                             onPress={() => setSelectedType(type)}
                             className={` ${filterButtonBaseClasses} ${selectedType === type ? filterButtonActiveClasses : filterButtonInactiveClasses}`}
                         >
-                            <Text className={`text-black ${selectedType === type ? filterButtonActiveClasses : filterButtonInactiveClasses}`}>{type.toUpperCase().split('_').join(' ')}</Text>
+                            <Text style={{ fontFamily: 'Frutiger' }} className={`text-black ${selectedType === type ? filterButtonActiveClasses : filterButtonInactiveClasses}`}>{type.toUpperCase().split('_').join(' ')}</Text>
                         </TouchableOpacity>
                     ))}
                 </View>

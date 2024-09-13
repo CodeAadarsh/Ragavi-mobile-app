@@ -104,14 +104,14 @@ const AccountPage = ({ }) => {
         </TouchableOpacity>
 
         {/* Profile Name */}
-        <Text className='text-xl font-semibold p-2'>Johnny Crow Senior</Text>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-xl font-semibold p-2'>Johnny Crow Senior</Text>
 
         {/* Edit Profile  */}
         <TouchableOpacity onPress={() => navigation.navigate(profile)} className='flex flex-row p-1 border-2 border-solid items-center justify-center'>
           <Image
             className='h-3 w-3'
             source={require('../../assets/Images/EditProfile.png')} />
-          <Text className='mx-2 text-xs'>Edit Profile</Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className='mx-2 text-xs'>Edit Profile</Text>
         </TouchableOpacity>
       </View>
 
@@ -123,7 +123,7 @@ const AccountPage = ({ }) => {
               <View className="items-center justify-center pl-2">
               {items.pagename}
               </View>
-              <Text className='ml-6 font-normal text-xl '>{items.label}</Text>
+              <Text style={{ fontFamily: 'Frutiger' }} className='ml-6 font-normal text-xl '>{items.label}</Text>
             </View>
             <ChevronRight/>
           </TouchableOpacity>

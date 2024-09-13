@@ -27,8 +27,8 @@ const Error404 = () => {
       </Svg>
 
       {/* Text Content */}
-      <Text className="text-2xl font-bold text-gray-800 mt-4">Page Not Found</Text>
-      <Text className="text-gray-500 text-center mt-2">
+      <Text style={{ fontFamily: 'Frutiger' }} className="text-2xl font-bold text-gray-800 mt-4">Page Not Found</Text>
+      <Text style={{ fontFamily: 'Frutiger' }} className="text-gray-500 text-center mt-2">
         The page you are looking for doesn't exist or has been moved.
       </Text>
 
@@ -37,7 +37,7 @@ const Error404 = () => {
         className="mt-6 bg-primary py-3 px-6 rounded-lg"
         onPress={() => navigation.goBack()}
       >
-        <Text className="text-white font-semibold">Go back</Text>
+        <Text style={{ fontFamily: 'Frutiger' }} className="text-white font-semibold">Go back</Text>
       </TouchableOpacity>
     </View>
   );

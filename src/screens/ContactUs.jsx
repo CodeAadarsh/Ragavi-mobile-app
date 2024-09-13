@@ -30,7 +30,7 @@ const ContactUs = () => {
                 {/* reach out on */}
                 <View className='flex flex-row gap-3 mb-10'>
                     <ShortLogo />
-                    <Text className='text-lg pt-1'>Reach Out On</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg pt-1'>Reach Out On</Text>
                 </View>
 
                 {/*  Timings  */}
@@ -40,13 +40,13 @@ const ContactUs = () => {
                         <View className=''>
                             <BagIcon />
                         </View>
-                        <Text className='text-lg mt-1 font-normal mx-3'> Mon - Sat </Text>
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg mt-1 font-normal mx-3'> Mon - Sat </Text>
                     </View>
                     <View className='flex flex-row '>
                         <View className=''>
                             <ClockIcon />
                         </View>
-                        <Text className='text-lg mt-1 font-normal mr-8'> 10 - 6 pm </Text>
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg mt-1 font-normal mr-8'> 10 - 6 pm </Text>
                     </View>
 
                 </View>
@@ -57,32 +57,32 @@ const ContactUs = () => {
                         <View className=''>
                             <CallIcon />
                         </View>
-                        <Text className='text-lg mt-1 font-normal mx-2'> + 91 7272054054 </Text>
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg mt-1 font-normal mx-2'> + 91 7272054054 </Text>
                     </View>
                     <View className='flex flex-row '>
                         <View className=''>
                             <InterNetIcon />
                         </View>
-                        <Text className='text-lg mt-1 font-normal mr-8'> Ragavi.in </Text>
+                        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg mt-1 font-normal mr-8'> Ragavi.in </Text>
                     </View>
 
                 </View>
                 {/* Mail */}
                 <View className='flex flex-row py-2'>
                     <MailIcon />
-                    <Text className='text-lg font-normal mx-4'>RagaviInfo@ragavi.info</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal mx-4'>RagaviInfo@ragavi.info</Text>
                 </View>
                 {/* Location */}
                 <View className='flex flex-row py-2 mr-4'>
                     <View className='mt-4'>
                         <LocationIcon />
                     </View>
-                    <Text className='text-lg font-normal mx-4'>Raj Ethnic Apparels Pvt. Ltd. H-135, RIICO Industrial Area,Mansarovar Jaipur- 302020 Rajasthan</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal mx-4'>Raj Ethnic Apparels Pvt. Ltd. H-135, RIICO Industrial Area,Mansarovar Jaipur- 302020 Rajasthan</Text>
                 </View>
 
                 {/* Social Medias */}
                 <View className='mx-2 py-10'>
-                    <Text className='text-2xl my-1'>Stay Connected</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-2xl my-1'>Stay Connected</Text>
                     <View className='flex flex-row  justify-start gap-5'>
                         <TouchableOpacity>
                             <InstagramIcon />
@@ -111,7 +111,7 @@ const ContactUs = () => {
             <TouchableOpacity className='flex flex-row justify-between border border-gray-400 p-2'>
                 <View className='flex flex-row px-2 gap-4'>
                 <RefundIcon/>
-                <Text className='font-normal text-2xl'>Refunds & Exchange</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className='font-normal text-2xl'>Refunds & Exchange</Text>
                 </View>
                 <ChevronRight/>
             </TouchableOpacity>

@@ -15,13 +15,13 @@ const MyRewards = () => {
             </View>
             <View className='flex-1 justify-center items-center'>
                 <View className='p-20 '>
-                    <Text className='text-2xl text-gray-400 text-center'>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-2xl text-gray-400 text-center'>
                         LOOKS LIKE YOU HAVEN'T ORDERED ANYTHING YET
                     </Text>
                     
                 </View>
                 <TouchableOpacity className='border border-solid border-primary w-32 justify-center items-center h-10'>
-                    <Text className='text-lg text-primary'>SHOP NOW</Text>
+                    <Text style={{ fontFamily: 'Frutiger' }} className='text-lg text-primary'>SHOP NOW</Text>
                     </TouchableOpacity>
             </View>
         </>

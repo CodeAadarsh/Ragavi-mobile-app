@@ -170,11 +170,11 @@ const Homepage = () => {
         {/* Exclusive for You */}
         <View>
           <StyledView className='flex flex-row justify-between p-4'>
-            <Text className='text-3xl'>
+            <Text style={{ fontFamily: 'Frutiger' }} className='text-3xl'>
               Excusive For You
             </Text>
             <TouchableOpacity onPress={() => Navigation.navigate('SeeAll')}>
-              <Text className='text-lg font-normal'>
+              <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal'>
                 See All
               </Text>
             </TouchableOpacity>
@@ -203,11 +203,11 @@ const Homepage = () => {
         {/* Bestselling Beauties */}
         <View>
           <View className='flex flex-row justify-between p-4'>
-            <Text className='text-3xl'>
+            <Text style={{ fontFamily: 'Frutiger' }} className='text-3xl'>
               Bestselling Beauties
             </Text>
             <TouchableOpacity>
-              <Text className='text-lg font-normal'>
+              <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal'>
                 See All
               </Text>
             </TouchableOpacity>
@@ -221,10 +221,10 @@ const Homepage = () => {
 
               <Image className='' style={styles.image1} source={items.path} />
               <View className="my-2">
-                <Text className="text-xl font-semibold text-center">{items.name}</Text>
+                <Text style={{ fontFamily: 'Frutiger' }} className="text-xl font-semibold text-center">{items.name}</Text>
                 <View className="flex-row items-center justify-center m-2 ">
-                  <Text className="text-gray-400 line-through mr-2">{'\u20B9'}{items.mrp}</Text>
-                  <Text className="text-primary text-lg">{'\u20B9'}{items.price}</Text>
+                  <Text style={{ fontFamily: 'Frutiger' }} className="text-gray-400 line-through mr-2">{'\u20B9'}{items.mrp}</Text>
+                  <Text style={{ fontFamily: 'Frutiger' }} className="text-primary text-lg">{'\u20B9'}{items.price}</Text>
                 </View>
               </View>
             </Pressable>
@@ -232,7 +232,7 @@ const Homepage = () => {
         </ScrollView>
 
 
-        <Text className='text-3xl text-center m-2'>#Ragavi On Instagram</Text>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-3xl text-center m-2'>#Ragavi On Instagram</Text>
         <ScrollView horizontal={true}>
           {instagramData.map((items, index) => (
           <Pressable onPress={() => { console.log('image is pressed') }}
@@ -243,7 +243,7 @@ const Homepage = () => {
           ))}
         </ScrollView>
 
-          <Text className='text-center text-xl text-red-500 py-4'>Join Our World</Text>
+          <Text style={{ fontFamily: 'Frutiger' }} className='text-center text-xl text-red-500 py-4'>Join Our World</Text>
       </ScrollView>
     </>
 

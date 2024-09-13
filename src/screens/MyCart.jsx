@@ -73,8 +73,8 @@ const MyCart = () => {
 
 
         <View className='flex flex-row justify-between mb-2 px-8 py-4 border border-solid border-gray-200'>
-          <Text>Total Amount</Text>
-          <Text>₹ {totalPrice}</Text>
+          <Text style={{ fontFamily: 'Frutiger' }}>Total Amount</Text>
+          <Text style={{ fontFamily: 'Frutiger' }}>₹ {totalPrice}</Text>
         </View>
 
         <View className='mx-2'>
@@ -94,12 +94,12 @@ const MyCart = () => {
 
       </ScrollView>
       <View className='mt-auto mx-3 my-4 flex flex-row justify-between'>
-        <Text className='text-lg font-normal'>Total Amount</Text>
-        <Text className='text-lg'>₹ {totalPrice}</Text>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg font-normal'>Total Amount</Text>
+        <Text style={{ fontFamily: 'Frutiger' }} className='text-lg'>₹ {totalPrice}</Text>
       </View>
       <View className='flex flex-row justify-end mx-6 mb-6 '>
         <TouchableOpacity className='shadow-2xl w-40 h-10 bg-primary flex items-center justify-center'>
-          <Text className='text-white font-normal text-lg'>
+          <Text style={{ fontFamily: 'Frutiger' }} className='text-white font-normal text-lg'>
             Proceed To Buy
           </Text>
         </TouchableOpacity>
